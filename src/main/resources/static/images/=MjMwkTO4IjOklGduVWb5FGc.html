@@ -1,0 +1,1190 @@
+<!-- ===============  JAVASCRIPT STARTS ================ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--
+<link href="" rel="author" />
+<link href="" rel="author" />
+<link href="" rel="author" />
+-->
+<link href="https://eticket.railway.gov.bd/manifest.json" rel="manifest" />
+
+<!--Meta properties for Facebook Open Graph
+<meta property="fb:app_id" content=""/>
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Bangladesh Railway" />
+Meta properties for Facebook Open Graph-->
+
+<meta property='og:title' content="Bangladesh Railway E-Ticketing Service"/>
+<meta property="og:image" content="https://eticket.railway.gov.bd/img/railway-og-image.png" />
+<meta property='og:description' content="Buy rail tickets online in three easy steps: search, select and pay. The tickets are issued by Bangladesh Railway’s CCSRTS."/>
+<meta property='og:url' content="https://eticket.railway.gov.bd/booking/train/confirmed/=MjMwkTO4IjOklGduVWb5FGc"/>
+
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="google-site-verification" content="" /> -->
+<link rel="shortcut icon" href="https://eticket.railway.gov.bd/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://eticket.railway.gov.bd/img/favicon.ico" type="image/x-icon">
+<!-- <meta name="msvalidate.01" content="" /> -->
+<script src="https://eticket.railway.gov.bd/js/jquery-1.10.2.min.js" ></script>
+<script src="https://eticket.railway.gov.bd/js/bootstrap-modal.js" ></script>
+
+
+<!-- Trufis core CSS -->
+<link href="https://eticket.railway.gov.bd/css/bootstrap.css" rel="stylesheet">
+
+<!-- JQuery UI CSS -->
+<link rel="stylesheet" type="text/css" href="https://eticket.railway.gov.bd/css/jquery-ui.css?v=2" />
+
+<!-- datepicker for this template -->
+<link href="https://eticket.railway.gov.bd/css/datepicker.css?v=1" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="https://eticket.railway.gov.bd/css/shohoz_style.css?v=10" rel="stylesheet">
+<link href="https://eticket.railway.gov.bd/css/meanmenu.min.css" rel="stylesheet">
+<link href="https://eticket.railway.gov.bd/css/template.css?v=1" rel="stylesheet">
+<noscript>
+<meta http-equiv="refresh" id="mtaJSCheck" content="0;/enable-javascript.html" />
+</noscript>
+<link href="https://eticket.railway.gov.bd/font-awesome-4.3.0/css/font-awesome.css?v=2" rel="stylesheet">
+<!--CleverTap and Google - Start-->
+<!--CleverTap - Start -->
+<script type="text/javascript">
+    var clevertap = {event: [], profile: [], account: [], onUserLogin: [], notifications: []};
+    // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+    clevertap.account.push({"id": "485-K65-RR5Z"});
+    (function () {
+        var wzrk = document.createElement('script');
+        wzrk.type = 'text/javascript';
+        wzrk.async = true;
+        wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wzrk, s);
+    })();
+</script>
+<!--CleverTap - Start -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WMV5Z7B');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - AdWords: 812588262 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-812588262"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'AW-812588262');</script>
+<!-- End Global site tag (gtag.js) - AdWords: 812588262 -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register("https://eticket.railway.gov.bd/sw.js").then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+</script><!--CleverTap and Google - End-->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '536231479843664'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<!--<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=536231479843664&ev=PageView&noscript=1"
+/></noscript>-->
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+    
+    <title>Bangladesh Railway E-Ticketing Service | Booking Confirmation</title>
+    <meta name="keywords" content="Online train ticket booking, Buy train tickets, Train ticket booking, Railway ticket, bd railway, online train ticket, bangladesh railway ticket, bd train ticket, railway ticket booking, e ticket railway, e ticket train, bd railway ticket, bangladesh railway online ticket, bd train ticket"/>
+    <meta name="description" content="Buy rail tickets online in three easy steps: search, select and pay. The tickets are issued by Bangladesh Railway’s CCSRTS." />
+    <meta name="author" content="Bangladesh Railway">
+    <meta content="follow, index, all" name="robots" />
+    <!-- G&R Remarketing Code -->
+<script type="text/javascript">
+	var GNR_CLIENT = 6560;
+	(function () {
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = '//content.green-red.com/lib/track.js';
+		var x = document.getElementsByTagName('script')[0];
+		x.parentNode.insertBefore(s, x);
+	})();
+</script>
+<!-- End of G&R Remarketing Code -->    <link href="https://eticket.railway.gov.bd/css/loader.css" rel="stylesheet">
+        <link href="/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="/css/theme.default.css" rel="stylesheet">
+    <style>
+        div#main_wrapper {
+            margin-top: 100px !important;
+        }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+            font-family: Roboto, Helvetica, sans-serif;
+            color: #006747;
+        }
+        #btick_dtls ul li span {
+            width: 128px;
+        }
+        .print-ticket-btn{
+            max-width: 328px;
+            background: #006747;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            width: 100%;
+            height: 46px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        #booked_msg {
+            margin-bottom: 80px;
+        }
+        #booked_msg a {
+            color: #006747;
+        }
+        #booked_msg h4 {
+            color: #006747;
+            line-height: 28px;
+            letter-spacing: 0.1445px;
+        }
+        #booked_msg li {
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 26px;
+            letter-spacing: 0.1445px;
+            color: #0F2444;
+        }
+        #booked_msg p {
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.1445px;
+            color: #0F2444;
+            margin-bottom: 25px;
+        }
+        #booked_msg p span {
+            color: #006747;
+        }
+        div#search_sec {
+            margin-bottom: 80px;
+        }
+        #content {
+            margin: 0 auto;
+            height: auto;
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WMV5Z7B');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - AdWords: 812588262 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-812588262"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-812588262');</script>
+    <!-- End Global site tag (gtag.js) - AdWords: 812588262 -->
+</head>
+<body>
+
+    
+    <style>
+  .truck-nav:hover .truck-nav-icon-black {
+    display:none !important;
+  }
+
+  .truck-nav-icon-white {
+      display: none;
+  }
+  .main-navigation ul li a:hover, .main-navigation ul li a.current {
+      background: inherit !important;
+      color: #0F2444 !important;
+      border-bottom: 2px solid #0F2444 !important;
+      border-radius: 0 !important;
+  }
+  .main-navigation ul li a:focus, .main-navigation ul li a:active {
+    text-decoration: none;
+  }
+
+  .current .truck-nav-icon-white {
+      display:inline !important;
+  }
+
+  .truck-nav:hover .truck-nav-icon-white {
+      display:inline !important;
+  }
+  .main-navigation {
+      margin-right: 0;
+      float: right;
+      margin-top: 8px;
+  }
+  .site-logo .header-logo {
+      display: flex;
+      align-items: center;
+      color: #DA924E;
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+  }
+  .site-logo .header-logo .header-logo-img {
+      margin-right: 10px;
+  }
+  .site-logo .header-logo-text {
+      align-items: center;
+      color: #DA924E;
+      font-weight: 700;
+      font-size: 20px;
+  }
+  .main-header {
+      padding: 15px 0 10px;
+  }
+  .railway-logged-user {
+    color: #333333;
+    font-size: 15px;
+    padding: 6px 15px;
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: bold;
+    border-top: 1px solid rgba(255,255,255,.5);
+  }
+  @media screen and (max-width: 767px){
+    .truck-nav-icon-white {
+      display: inline;
+    }
+    .truck-nav-icon-black {
+      display: none;
+    }
+    .railway-logged-user {
+      color: #FFF;
+      padding: 10px 20px;
+    }
+    header.new-header .site-wrapper {
+      padding-left: 0;
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://eticket.railway.gov.bd/v2/assets/styles/learn.css?v=1.4.0" />
+
+<header class="new-header">
+  <input type="hidden" id="www-search-id" name="www-search-id" value="">
+
+  <!-- Header Top Part End Here -->
+  <div class="main-header">
+      <!-- Header Start Here -->
+      <div class="container-wrapper">
+        <div class="site-wrapper clearfix">
+          <div class="site-logo">
+              <a title="Bangladesh Railway" href="https://eticket.railway.gov.bd" class="header-logo">
+                  <div class="header-logo-img">
+                      <img src="https://eticket.railway.gov.bd/v2/assets/img/home/bangladesh-railway.png" width="60" alt="Bangladesh Railway Logo">
+                  </div>
+                  <div class="header-logo-text">
+                      Bangladesh <br>Railway
+                  </div>
+              </a>
+          </div>
+          <nav class="main-navigation" style="display: block;">
+              <ul>
+                  <li><a title="Railway Home" href="https://eticket.railway.gov.bd/en" class="">Home</a></li>
+                                    <li><a title="Verify Ticket" href="https://eticket.railway.gov.bd/verify-ticket/en" class="">Verify Ticket</a></li>
+                  <li><a title="Contact Us" href="https://eticket.railway.gov.bd/contact-us/en" class="">Contact Us</a></li>
+
+                                      <li><a href="https://eticket.railway.gov.bd/my-orders/en" class="">Purchase History</a></li>
+                                        <li class="railway-logged-user" title="Abu Mauze Tamzid Khan">Abu Mauze Tamzid Khan</li>
+                    <form id="logout-form" class="hide" action="https://eticket.railway.gov.bd/logout/en" method="POST"></form>
+                    <li><a title="Logout" href="#">Logout</a></li>
+                                </ul>
+          </nav>
+          <div class="mobile-menu"></div>
+      <!-- Header End Here -->
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- main_wrapper starts here -->
+    <div id="main_wrapper">
+            <!-- ============= content starts here ================== -->
+    <section id="content" class="container">
+
+        <div class="clearfix"></div>
+
+        <!-- 1st row starts -->
+        <div class="row">
+
+            <!-- col-md-12 row starts -->
+            <div class="col-md-12">
+
+                <!-- 2nd row starts -->
+                <div class="row">
+                    <!-- booked_msg starts here -->
+                    <div id="booked_msg" class="col-md-8">
+                        
+                        <div id="d_msg">
+                                                            <h5>Payment Successful!</h5>
+                                <h4>Hi ABU MAUZE TAMZID KHAN, We have successfully confirmed your ticket!</h4>
+                                <p style="display: none;">
+                                    We have successfully completed your booking.</b>
+                                    You should receive a confirmation SMS on <span>01959752029</span>
+                                     and an email at <span>abumauze.tamzid19597@gmail.com</span> . 
+                                </p>
+                                                                <b style="font-size:19px;">We request you to read the following:</b><br><br>
+                                <ul>
+                                    <li>Download and show a copy of the printed ticket at the counter to receive a Bangladesh Railway printed ticket.</li>
+                                    <li>For cancellation and refund please show the printed ticket at station counters.</li>
+                                    <li>For technical reasons, email containing PDF ticket may get delayed. Please check your device’s download folder to find your PDF ticket.</li>
+                                    <li>If you have not received the email after a few hours, please send a support request email at <a href="mailto:support@eticket.railway.gov.bd">support@eticket.railway.gov.bd</a>.</li>
+                                </ul>
+                                                    </div>
+                                                <div style="margin-top:30px;" class="col-md-12">
+                            <form class="col-md-6" method="GET" target="_blank" action="/booking/ticket/print/==QQ3UER4AjN2UzN2IjN" style="padding-left:0;">
+                                <input type="hidden" name="print" value="1"/>
+                                <button type="submit" class="btn btn-default btn-sm print-ticket-btn">Print your ticket now!</button>
+                            </form>
+                        </div>
+                                                
+                    </div>
+                    <!-- booked_msg ends here -->
+
+                    <!-- booked_ticket starts here -->
+                    <div id="booked_ticket" class="col-md-4">
+                        <div id="btick_dtls">
+                            <h4>   Journey Details </h4>
+                            <ul class="clearfix">
+                                                                <li style="font-family: Roboto, sans-serif; font-style: normal; font-weight: normal; font-size: 22px; line-height: 30px; letter-spacing: 0.1445px; color: #006747;">
+                                    <span>PNR</span> 626756608DE7A                                </li>
+                                                                <li><span>Train Name: </span>JAMUNA EXPRESS (745)</li>
+                                <li><span>Class: </span>SHOVAN</li>
+                                <li><span>Seats: </span>
+                                                                            TA-27                                          
+                                                                    </li>
+                                <li><span>From and To city: </span> Dhaka <b style="color:#a1a1a2;font-weight: normal;">to</b> Gafargaon</li>
+                                                                <li><span>Journey date and time:</span>Sat, 30 Apr 2022, 04:45 PM</li>
+
+
+                                                                <!--<li class="text-center li_action hide">
+                                    <a href="javascript:void(0)" onclick="showTripPolicies(8073163)" >View Cancellation Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    <a href="http://www.facebook.com/shohoz" target="_blank">Like Us on Facebook</a>-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- booked_ticket ends here -->
+
+                </div>
+                <!-- 2nd row ends -->
+
+                <div class="shadow_sep" style="display: none;">
+                    <img src="/img/shadow_sep.jpg" class="img-responsive" alt="sep">
+                </div>
+
+                <!-- search_sec starts here -->
+                <div id="search_sec" style="padding:-1px 20px; display: none;">
+                        <h4>Book another ticket for onward or return journey</h4>
+                        <style>
+	#button_top_mr{
+		display:flex;
+		justify-content:center;
+		flex-direction:column;
+		margin:-18px 0px 0px 14px;
+	}
+	.button_top_mr p svg{
+		margin: 0 0 0 0;
+	}
+	.button_top_mr p svg:hover{
+		cursor:grab;
+	}
+	@media (max-width: 767px) {
+		#button_top_mr{
+			width:100%;
+		}
+		.close_p_place{
+			margin: 0 !important;
+		}
+    }
+	.label_text_color{
+		color: #828282;
+		font-weight: normal;
+	}
+	.input_text_color{
+		color:#4F4F4F;
+		font-weight: normal;
+		background-color: #FFFFFF;
+	}
+	.btn_size{
+		width: 135px;
+	}
+	.close_p_place {
+		margin: 7px 0;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+	}
+	.search-widget-container {
+		display:flex;
+	}
+</style>
+		<div class="container search-widget-container">
+			<form name="bussearch" id="bussearch" onsubmit="return validateBusForm(this)">
+				<ul class="list-inline">
+					<li class="srch_input_wd">
+
+						<div class="form-group">
+							<label for="dest_from" class="label_text_color">From</label>
+							<input type="text" class="form-control jqchars input_text_color" id="dest_from" name="dest_from" placeholder="From Station" maxlength="15" value="">
+						</div>
+					</li>
+					<li id="travel_icon"  class="srch_input_wd">
+					</li>
+					<li class="srch_input_wd">
+						<div class="form-group">
+							<label for="dest_to" class="label_text_color">To</label>
+							<input type="text" class="form-control jqchars input_text_color" id="dest_to" name="dest_to" placeholder="To Station" maxlength="15" value="">
+						</div>
+					</li>
+					<li class="srch_input_wd">
+						<div class="form-group">
+							<label for="doj" class="label_text_color">Date of Journey</label>
+							<input type="text" class="datepicker form-control input_text_color" id="doj" name="doj" data-date-format="dd/mm/yyyy" placeholder="Pick a date" value="" readonly="true">
+						</div>
+					</li>
+					<li class="srch_input_wd">
+						<div class="form-group">
+							<label for="choose_class" class="label_text_color">Choose Class</label>
+														<select name="choose_class" id="choose_class" class="form-control">
+								<option value="">Choose a Class</option>
+																<option value="AC_B" >AC_B</option>
+																<option value="AC_S" >AC_S</option>
+																<option value="SNIGDHA" >SNIGDHA</option>
+																<option value="F_BERTH" >F_BERTH</option>
+																<option value="F_SEAT" >F_SEAT</option>
+																<option value="F_CHAIR" >F_CHAIR</option>
+																<option value="S_CHAIR" >S_CHAIR</option>
+																<option value="SHOVAN" >SHOVAN</option>
+																<option value="SHULOV" >SHULOV</option>
+															</select>
+						</div>
+					</li>
+					<!-- Train comment display none -->
+					<li class="srch_input_wd" style="display: none">
+						<div class="form-group">
+							<label for="doj" class="label_text_color">Date of Return<span> (Optional)</span></label>
+							<input type="text" class="datepicker form-control input_text_color" id="dor" name="dor" data-date-format="dd/mm/yyyy" placeholder="Pick a date" value="">
+						</div>
+					</li>
+					<!---bKas Modal  --->
+										&nbsp;
+					<li id="button_top_mr">
+					<div>
+						<p class="seach_header_container close_p_place">
+							<b style="color:#079D49; margin:3px 0 0 0">Close</b>
+							<span>
+								<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.5817 5.58167L16.5818 16.5817" stroke="#079D49" stroke-width="2"/>
+									<path d="M16.5814 5.58167L5.58132 16.5817" stroke="#079D49" stroke-width="2"/>
+								</svg>
+							</span>
+						</p>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-default btn-block btn-width btn_size">Search Train</button>
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+	   <div class="clearfix"></div>
+
+<script type="text/javascript">
+$(function() {
+	// swap form and to location
+		$( "#travel_icon" ).click(function() {
+		  let form = $("#dest_from").val();
+			let to = $("#dest_to").val()
+			$("#dest_from").val(to);
+			$("#dest_to").val(form);
+		});
+
+	$('#dest_from').focus();
+    $( ".datepicker" ).datepicker({
+		showOn: "both",
+		buttonImage: "/img/calendar.png",
+		buttonImageOnly: true,
+		dateFormat: "dd-M-yy",
+		minDate: 0,
+		maxDate: "+4D",
+		onSelect:function(date, dtObj) {
+			if($(this).attr('id') == 'doj') {
+				$( "#dor" ).datepicker( "option", "minDate", date);
+			}
+		}
+    });
+	var cities = [{"city_id":763,"city_name":"Abdulpur","city_name_bn":"\u0986\u09ac\u09cd\u09a6\u09c1\u09b2\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"AUP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 17:16:52","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":763},{"city_id":584,"city_name":"Aditmari","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"Aditmari","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":584},{"city_id":852,"city_name":"Adv. Motiur Rahman","city_name_bn":"\u0985\u09cd\u09af\u09be\u09a1\u09ad\u09cb\u0995\u09c7\u099f \u09ae\u09a4\u09bf\u0989\u09b0  \u09b0\u09b9\u09ae\u09be\u09a8","city_status":1,"sequence":0,"city_short_name":"AMRT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":852},{"city_id":762,"city_name":"Ahsanganj","city_name_bn":"\u0986\u09b9\u09b8\u09be\u09a8\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"AHG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 17:11:01","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":762},{"city_id":809,"city_name":"Akhaura","city_name_bn":"\u0986\u0996\u09be\u0989\u09dc\u09be","city_status":1,"sequence":0,"city_short_name":"AKA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 10:34:38","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":809},{"city_id":242,"city_name":"Akkelpur","city_name_bn":"\u0986\u0995\u09cd\u0995\u09c7\u09b2\u09aa\u09c1\u09b0","city_status":1,"sequence":878,"city_short_name":"ACP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 22:58:50","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":242},{"city_id":592,"city_name":"Alamdanga ","city_name_bn":"\u0986\u09b2\u09ae\u09a1\u09be\u0999\u09cd\u0997\u09be","city_status":1,"sequence":0,"city_short_name":"ADG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 22:59:46","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":592},{"city_id":200,"city_name":"Amirabad ","city_name_bn":null,"city_status":1,"sequence":152,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":200},{"city_id":867,"city_name":"Amnura","city_name_bn":"\u0986\u09ae\u09a8\u09c1\u09b0\u09be","city_status":1,"sequence":0,"city_short_name":"Amnura","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":867},{"city_id":775,"city_name":"Arani","city_name_bn":"\u0986\u09dc\u09be\u09a8\u09c0","city_status":1,"sequence":0,"city_short_name":"Arani","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 01:43:16","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":775},{"city_id":178,"city_name":"Ashuganj","city_name_bn":"\u0986\u09b6\u09c1\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"ASZ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:00:24","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":178},{"city_id":864,"city_name":"Atharabari","city_name_bn":"\u0986\u09a0\u09be\u09b0\u09ac\u09be\u09a1\u09bc\u09c0","city_status":1,"sequence":0,"city_short_name":"Atharabari","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":864},{"city_id":817,"city_name":"Azampur","city_name_bn":"\u0986\u099c\u09ae\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"AZP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-23 23:45:43","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":817},{"city_id":777,"city_name":"Azim Nagar","city_name_bn":"\u0986\u099c\u09bf\u09ae \u09a8\u0997\u09b0","city_status":1,"sequence":0,"city_short_name":"AZGR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 01:16:01","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":777},{"city_id":769,"city_name":"B Sirajul Islam","city_name_bn":"\u09ac\u09c0.\u09ae\u09c1.\u09b8\u09bf.\u0987.","city_status":1,"sequence":0,"city_short_name":"BMS","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-01 09:15:35","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":769},{"city_id":523,"city_name":"Badarganj","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"B","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":523},{"city_id":790,"city_name":"Badherhat","city_name_bn":"\u09ac\u09be\u0981\u09a7\u09c7\u09b0\u09b9\u09be\u099f","city_status":1,"sequence":0,"city_short_name":"BDHT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":790},{"city_id":807,"city_name":"Baharpur","city_name_bn":"\u09ac\u09b9\u09b0\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"BHPR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":807},{"city_id":843,"city_name":"Bajitpur","city_name_bn":"\u09ac\u09be\u099c\u09bf\u09a4\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"BTP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-23 23:46:33","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":843},{"city_id":823,"city_name":"Bajra","city_name_bn":"\u09ac\u099c\u09b0\u09be","city_status":1,"sequence":0,"city_short_name":"BJX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":823},{"city_id":110,"city_name":"Banani","city_name_bn":"\u09ac\u09a8\u09be\u09a8\u09c0","city_status":1,"sequence":0,"city_short_name":"BNN","is_enroute":1,"is_enable_for_web":0,"created_at":"2022-03-30 11:15:03","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":10},{"city_id":833,"city_name":"Baramchal","city_name_bn":"\u09ac\u09b0\u09ae\u099a\u09be\u09b2","city_status":1,"sequence":0,"city_short_name":"BCV","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":833},{"city_id":857,"city_name":"Barhatta","city_name_bn":"\u09ac\u09be\u09b0\u09b9\u09be\u099f\u09cd\u099f\u09be","city_status":1,"sequence":0,"city_short_name":"BRAT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":857},{"city_id":800,"city_name":"Barkhata","city_name_bn":"\u09ac\u09be\u09b0\u0995\u09be\u0981\u09a5\u09be","city_status":1,"sequence":0,"city_short_name":"BKQ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":800},{"city_id":759,"city_name":"BBSetu_E","city_name_bn":"\u09ac\u0999\u09cd\u0997\u09ac\u09a8\u09cd\u09a7\u09c1\u09b8\u09c7\u09a4\u09c1 \u09aa\u09c2\u09b0\u09cd\u09ac","city_status":1,"sequence":0,"city_short_name":"BBE","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 16:58:11","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":759},{"city_id":782,"city_name":"BBSetu_W","city_name_bn":"\u09ac\u0999\u09cd\u0997\u09ac\u09a8\u09cd\u09a7\u09c1\u09b8\u09c7\u09a4\u09c1 \u09aa\u09b6\u09cd\u099a\u09bf\u09ae","city_status":1,"sequence":0,"city_short_name":"BBW","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":782},{"city_id":82,"city_name":"Benapole","city_name_bn":"\u09ac\u09c7\u09a8\u09be\u09aa\u09cb\u09b2","city_status":1,"sequence":82,"city_short_name":"BEN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:03:03","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":82},{"city_id":810,"city_name":"Bhairab_Bazar","city_name_bn":"\u09ad\u09c8\u09b0\u09ac \u09ac\u09be\u099c\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"BCI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 10:35:49","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":810},{"city_id":354,"city_name":"Bhanga","city_name_bn":"\u09ad\u09be\u0999\u09cd\u0997\u09be","city_status":1,"sequence":0,"city_short_name":"BHNGA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-17 16:06:35","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":354},{"city_id":819,"city_name":"Bhanugach","city_name_bn":"\u09ad\u09be\u09a8\u09c1\u0997\u09be\u099b","city_status":1,"sequence":0,"city_short_name":"BXX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 11:25:08","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":819},{"city_id":311,"city_name":"Bhatiary","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":311},{"city_id":239,"city_name":"Bheramara","city_name_bn":"\u09ad\u09c7\u09a1\u09bc\u09be\u09ae\u09be\u09b0\u09be","city_status":1,"sequence":772,"city_short_name":"BYM","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:04:06","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":239},{"city_id":850,"city_name":"Bhuapur","city_name_bn":"\u09ad\u09c1\u099e\u09be\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"BURP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":850},{"city_id":757,"city_name":"Biman_Bandar","city_name_bn":"\u09ac\u09bf\u09ae\u09be\u09a8_\u09ac\u09a8\u09cd\u09a6\u09b0","city_status":1,"sequence":0,"city_short_name":"DAB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 16:18:18","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":757},{"city_id":5,"city_name":"Birampur","city_name_bn":"\u09ac\u09bf\u09b0\u09be\u09ae\u09aa\u09c1\u09b0","city_status":1,"sequence":5,"city_short_name":"BAR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:04:34","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":5},{"city_id":806,"city_name":"Boalmari_Bazar","city_name_bn":"\u09ac\u09cb\u09df\u09be\u09b2\u09ae\u09be\u09b0\u09c0 \u09ac\u09be\u099c\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"BOMR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":806},{"city_id":10,"city_name":"Bogura","city_name_bn":null,"city_status":1,"sequence":10,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Bogura District is located in the Rajshahi Division of Bangladesh. This place is also known as the hub of northern Bangladesh, and hosts International Cricket matches in Shaheed Chandu Stadium. Bogura's yogurt is famous countrywide, and Visa Bohar, Sherpur Kherua Mosque, Korotoa River are some of its most visited places.","parent_id":10},{"city_id":766,"city_name":"Bonar_Para","city_name_bn":"\u09ac\u09cb\u09a8\u09be\u09b0\u09aa\u09be\u09a1\u09bc\u09be","city_status":1,"sequence":0,"city_short_name":"BNR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-23 23:48:44","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":766},{"city_id":761,"city_name":"Boral_Bridge","city_name_bn":"\u09ac\u09dc\u09be\u09b2_\u09ac\u09cd\u09b0\u09bf\u099c","city_status":1,"sequence":0,"city_short_name":"BRB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-23 23:49:25","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":761},{"city_id":803,"city_name":"Borashi","city_name_bn":"\u09ac\u09cb\u09dc\u09be\u09b6\u09c0","city_status":1,"sequence":0,"city_short_name":"BRSI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":803},{"city_id":264,"city_name":"Brahmanbaria","city_name_bn":"\u09ac\u09cd\u09b0\u09be\u09b9\u09cd\u09ae\u09a3\u09ac\u09be\u09a1\u09bc\u09bf\u09af\u09bc\u09be","city_status":1,"sequence":0,"city_short_name":"BHR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:05:09","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Located in the Chittagong Division, Brahmanbaria\/Bbaria is in the east-central part of Bangladesh. Brahmanbaria used to be famous for producing quality cloth Muslin during the Mughal era. Anderson Memorial, Arphail Sagardighi Mosque, Arphannesa Mosque, Bhadurghar Shahi Mosque, Basudeva Statue, Brahmanbaria Archives and Museum, Buddhist Viharas are some of the famous tourist attraction sites here.","parent_id":264},{"city_id":43,"city_name":"Burimari","city_name_bn":null,"city_status":1,"sequence":43,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":43},{"city_id":589,"city_name":"Chandpur","city_name_bn":"\u099a\u09be\u0981\u09a6\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"CDR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:05:34","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":589},{"city_id":839,"city_name":"Chandpur_Court","city_name_bn":"\u099a\u09be\u0981\u09a6\u09aa\u09c1\u09b0 \u0995\u09cb\u09b0\u09cd\u099f","city_status":1,"sequence":0,"city_short_name":"KCPR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-09 16:34:10","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":839},{"city_id":310,"city_name":"Chandradighalia","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":310},{"city_id":113,"city_name":"Chapai Nawabganj","city_name_bn":"\u099a\u09be\u09aa\u09be\u0987 \u09a8\u09ac\u09be\u09ac\u0997\u09a8\u09cd\u099c","city_status":1,"sequence":1,"city_short_name":"CNB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-23 23:51:12","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Under Rajshahi Division, Chapai Nawabganj is located in the western border of Bangladesh. Chapai Nawabganj mangoes are famous throughout the country along with jackfruit, watermelon, and lychee. Choto Sona Mosque, kanchat Rajbari, Shibmondir, Royal Palace, Naoda Stupa are some of the notable tourist spots here.","parent_id":113},{"city_id":805,"city_name":"Chapta","city_name_bn":"\u099a\u09be\u09aa\u09a4\u09be","city_status":1,"sequence":0,"city_short_name":"CHPT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":805},{"city_id":429,"city_name":"Chatmohar","city_name_bn":"\u099a\u09be\u099f\u09ae\u09cb\u09b9\u09b0","city_status":1,"sequence":0,"city_short_name":"CMO","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-25 17:07:09","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":429},{"city_id":21,"city_name":"Chilahati","city_name_bn":"\u099a\u09bf\u09b2\u09be\u09b9\u09be\u099f\u09bf","city_status":1,"sequence":21,"city_short_name":"CLH","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-23 23:53:45","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":21},{"city_id":48,"city_name":"Chirirbandar","city_name_bn":null,"city_status":1,"sequence":48,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":48},{"city_id":835,"city_name":"Chitoshi_Road","city_name_bn":"\u099a\u09bf\u09a4\u09cb\u09b7\u09c0 \u09b0\u09cb\u09a1","city_status":1,"sequence":0,"city_short_name":"CIR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":835},{"city_id":47,"city_name":"Chittagong","city_name_bn":"\u099a\u099f\u09cd\u099f\u0997\u09cd\u09b0\u09be\u09ae","city_status":1,"sequence":47,"city_short_name":"CTG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-21 03:40:54","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Located in the south-eastern part of Bangladesh, Chittagong is a major port city, and the second largest city after Dhaka. It is also considered as one of the oldest and significant trading city with many important companies setting up their operation here. Some famous attraction sites in Chittagong are: Foy's Lake, War Cemetery D.C. Hill, The Batali Hill, Patenga Sea Beach, Naval Point, and many more. Chittagong division is also considered to be the hub of tourist attractions in Bangladesh - hosting the largest sea beach in the world in Cox\u2019s Bazar, natural beauty of Bandarban, Tefnaf, Sajek and Saintmartin.","parent_id":47},{"city_id":804,"city_name":"Choto Bahirbag","city_name_bn":"\u099b\u09cb\u099f \u09ac\u09be\u09b9\u09bf\u09b0\u09ac\u09be\u0997","city_status":1,"sequence":0,"city_short_name":"CHBG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":804},{"city_id":822,"city_name":"Choumuhani","city_name_bn":"\u099a\u09cc\u09ae\u09c1\u09b9\u09a8\u09c0","city_status":1,"sequence":0,"city_short_name":"CMH","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":822},{"city_id":515,"city_name":"Chuadanga","city_name_bn":"\u099a\u09c1\u09af\u09bc\u09be\u09a1\u09be\u0999\u09cd\u0997\u09be","city_status":1,"sequence":0,"city_short_name":"COD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:07:02","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":515},{"city_id":209,"city_name":"Cumilla","city_name_bn":"\u0995\u09c1\u09ae\u09bf\u09b2\u09cd\u09b2\u09be","city_status":1,"sequence":161,"city_short_name":"CML","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 00:42:12","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":209},{"city_id":765,"city_name":"Darshana_Halt","city_name_bn":"\u09a6\u09b0\u09cd\u09b6\u09a8\u09be \u09b9\u09b2\u09cd\u099f","city_status":1,"sequence":0,"city_short_name":"DSH","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 00:45:03","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":765},{"city_id":580,"city_name":"Dashuria","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"D","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":580},{"city_id":362,"city_name":"Daulatpur","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":362},{"city_id":816,"city_name":"Dewanganj_Bazar","city_name_bn":"\u09a6\u09c7\u0993\u09df\u09be\u09a8\u0997\u099e\u09cd\u099c \u09ac\u09be\u099c\u09be\u09b0 ","city_status":1,"sequence":0,"city_short_name":"DWB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 11:04:38","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":816},{"city_id":1,"city_name":"Dhaka","city_name_bn":"\u09a2\u09be\u0995\u09be","city_status":1,"sequence":1,"city_short_name":"DHK","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-17 18:10:29","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Dhaka is the capital and the largest city of Bangladesh, holding up to 180 million residents. With headquarters of all the major local and multinational companies, Dhaka city is the hub of all trade and commerce for the country. Major Commercial Areas of Dhaka are Motijheel, Dhanmondi, Gulshan, Banani, Uttara and Karwan Bazar. Over the years, the city has seen a lot of growing middle class families meaning higher consumer spending. Thus, the demand for leisure has increased as well!","parent_id":1},{"city_id":861,"city_name":"Dhaka_Cantonment","city_name_bn":"\u09a2\u09be\u0995\u09be \u09b8\u09c7\u09a8\u09be\u09a8\u09bf\u09ac\u09be\u09b8","city_status":1,"sequence":0,"city_short_name":"DAC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-30 11:15:49","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":861},{"city_id":789,"city_name":"Dhalarchar","city_name_bn":"\u09a2\u09be\u09b2\u09be\u09b0\u099a\u09b0","city_status":1,"sequence":0,"city_short_name":"DHCR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":789},{"city_id":2,"city_name":"Dinajpur","city_name_bn":"\u09a6\u09bf\u09a8\u09be\u099c\u09aa\u09c1\u09b0","city_status":1,"sequence":2,"city_short_name":"DGP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:07:53","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Dinajpur is located in the northern side of Bangladesh under Rangpur division. Although Dinajpur is a small town, the roads are well developed and maintained regularly. Dinajpur is well known for their lychees and Kataribhogh Rice, and has famous tourist attraction sites such as: Paharpur, Shopnopuri Theme Park, Ramsagar Lake, and Dinajpur Raj Palace.","parent_id":2},{"city_id":20,"city_name":"Domar","city_name_bn":null,"city_status":1,"sequence":20,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":20},{"city_id":793,"city_name":"Dublia","city_name_bn":"\u09a6\u09c1\u09ac\u09b2\u09bf\u09af\u09bc\u09be","city_status":1,"sequence":0,"city_short_name":"DUBA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":793},{"city_id":184,"city_name":"Faridpur","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":184},{"city_id":258,"city_name":"Feni","city_name_bn":"\u09ab\u09c7\u09a8\u09c0","city_status":1,"sequence":1999,"city_short_name":"FNI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:08:26","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Feni is a small district located in the south-eastern part of Bangladesh, under Chittagong division.  The district consists of six sub-districts: Sonagazi, Fulgazi, Parshuram, Daganbhuiyan, Chhagalnaiya and Feni Sadar. Hatia Island, Sarsadi Masjid, Bijoy Sing lake, Rajazhi Lake are some of the most popular tourist attraction sites here. ","parent_id":258},{"city_id":4,"city_name":"Fulbari","city_name_bn":"\u09ab\u09c1\u09b2\u09ac\u09be\u09a1\u09bc\u09bf","city_status":1,"sequence":4,"city_short_name":"PLB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-25 17:03:32","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":4},{"city_id":846,"city_name":"Gachihata","city_name_bn":"\u0997\u099a\u09bf\u09b9\u09be\u099f\u09be","city_status":1,"sequence":0,"city_short_name":"GAC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":846},{"city_id":811,"city_name":"Gafargaon","city_name_bn":"\u0997\u09ab\u09b0\u0997\u09be\u0981\u0993","city_status":1,"sequence":0,"city_short_name":"GFN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 21:39:47","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":811},{"city_id":105,"city_name":"Gaibandha","city_name_bn":"\u0997\u09be\u0987\u09ac\u09be\u09a8\u09cd\u09a7\u09be","city_status":1,"sequence":0,"city_short_name":"GBH","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:08:52","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Gaibandha district is located in the right bank of Brahmaputra River, the northern part of Bangladesh. There are three municipalities in Gaibandha named Gobindaganj, Sundarganj and Gaibandha. Notable tourist attraction sites include: Pourashava Bhaban, Bashashi Ghat, core of the Capital of King Birot, Pirer Hat Mazar, Kantagir Temple, Shrine of Ghager Bazar, Gaibandha Municipality park and Ghaghot River bank.","parent_id":105},{"city_id":802,"city_name":"Gobra","city_name_bn":"\u0997\u09cb\u09ac\u09b0\u09be","city_status":1,"sequence":0,"city_short_name":"GOBR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":802},{"city_id":268,"city_name":"Gopalganj","city_name_bn":"\u0997\u09cb\u09aa\u09be\u09b2\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"GPLJ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-17 16:05:10","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Gopalganj district is located in the south-central part of Bangladesh, under Dhaka division. The district has a rich historical heritage, and was named after Naba Gopal, the grandson of Rashmoni of Khatra landlord. The graveyard of Bangabandhu Sheikh Mujibur Rahaman, and St. Mathuranath is also located here. Some notable tourist attraction sites include: Kotali Fort, Orakandi Thagure Bari of Kashiani, Joy Bangla Pond of Gopalganj Sadar, Barni Baor of Gopalganj Sadar, Baganbari of Tungipara (Birds Sanctuary), the parental homestead of poet Sukanta in Kotalipara, Kort Mosque, Chander Bil, Khaner Par Lake, Lal Saplar Bil of Kotalipara, Upalpur Landlord House (currently Tafsil office), home of poet Sukanta Vattacharja, Bahutali Mosque, Uzanir Landlord Palace, etc.","parent_id":268},{"city_id":853,"city_name":"Gouripur_Myn","city_name_bn":"\u0997\u09cc\u09b0\u09c0\u09aa\u09c1\u09b0_\u09ae\u09df\u09ae\u09a8\u09b8\u09bf\u0982","city_status":1,"sequence":0,"city_short_name":"GRM","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 21:41:37","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":853},{"city_id":808,"city_name":"Gunabati","city_name_bn":"\u0997\u09c1\u09a3\u09ac\u09a4\u09c0","city_status":1,"sequence":0,"city_short_name":"GBI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":808},{"city_id":837,"city_name":"Hajiganj","city_name_bn":"\u09b9\u09be\u099c\u09c0\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"HJJ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":837},{"city_id":873,"city_name":"Haldibari","city_name_bn":"\u09b9\u09b2\u09a6\u09bf\u09ac\u09be\u09dc\u09c0","city_status":1,"sequence":0,"city_short_name":"HDB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-08 16:32:29","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":873},{"city_id":828,"city_name":"Harashpur","city_name_bn":"\u09b9\u09b0\u09b7\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"HPX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":828},{"city_id":834,"city_name":"Hasanpur","city_name_bn":"\u09b9\u09be\u09b8\u09be\u09a8\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"HAX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":834},{"city_id":41,"city_name":"Hatibandha","city_name_bn":null,"city_status":1,"sequence":41,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":41},{"city_id":851,"city_name":"Hemnagar","city_name_bn":"\u09b9\u09c7\u09ae\u09a8\u0997\u09b0","city_status":1,"sequence":0,"city_short_name":"HMNR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":851},{"city_id":781,"city_name":"Hi-Tech City","city_name_bn":"\u09b9\u09be\u0987-\u099f\u09c7\u0995 \u09b8\u09bf\u099f\u09bf","city_status":1,"sequence":0,"city_short_name":"HTCT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 20:09:33","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":781},{"city_id":80,"city_name":"Hili","city_name_bn":null,"city_status":1,"sequence":80,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Hili land port is located in Dinajpur district and is the second largest land port in Bangladesh. The Hili customs station port is responsible for all the export-import between India and Bangladesh.","parent_id":80},{"city_id":72,"city_name":"Ishwardi","city_name_bn":"\u0988\u09b6\u09cd\u09ac\u09b0\u09a6\u09c0","city_status":1,"sequence":72,"city_short_name":"ISD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:09:21","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":72},{"city_id":767,"city_name":"Ishwardi Bypass","city_name_bn":"\u0988\u09b6\u09cd\u09ac\u09b0\u09a6\u09c0 \u09ac\u09be\u0987\u09aa\u09be\u09b8","city_status":1,"sequence":0,"city_short_name":"ISDB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-27 21:42:12","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":767},{"city_id":815,"city_name":"Islampur_Bazar","city_name_bn":"\u0987\u09b8\u09b2\u09be\u09ae\u09aa\u09c1\u09b0 \u09ac\u09be\u099c\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"IPB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 11:03:53","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":815},{"city_id":604,"city_name":"Jamalganj","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"Jamalganj","is_enroute":1,"is_enable_for_web":0,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":601},{"city_id":722,"city_name":"Jamalpur","city_name_bn":"\u099c\u09be\u09ae\u09be\u09b2\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"JLXX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":722},{"city_id":813,"city_name":"Jamalpur_Town","city_name_bn":"\u099c\u09be\u09ae\u09be\u09b2\u09aa\u09c1\u09b0 \u099f\u09be\u0989\u09a8","city_status":1,"sequence":0,"city_short_name":"JLX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 21:48:44","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":813},{"city_id":774,"city_name":"Jamtail","city_name_bn":"\u099c\u09be\u09ae\u09a4\u09c8\u09b2","city_status":1,"sequence":0,"city_short_name":"Jamtail","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":774},{"city_id":51,"city_name":"Jessore","city_name_bn":"\u09af\u09b6\u09cb\u09b0","city_status":1,"sequence":51,"city_short_name":"JSR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:11:28","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Jessore, the 13th largest district, is located in the south-western borderline of Bangladesh. Some of the famous tourist places in Jessore include: Sagordari, Graveyard of Gazi Kalu Champaboti, Tetulia Mosque, Graveyard of Bulu Dewan, Imam Bari, Parental House of Dhiraj Vattyacharja, Benapol Border Gate, Chachra Royal Palace and Shib Mondir, Residence of Michal Madhusudan Datta, Varat Vayner Dewary, Balia Vakutia Village (famous for its small weaving industry), Baliadanga Temple, etc. ","parent_id":51},{"city_id":227,"city_name":"Jhikargacha","city_name_bn":"\u099d\u09bf\u0995\u09b0\u0997\u09be\u099b\u09be","city_status":1,"sequence":820,"city_short_name":"JCG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-25 17:08:58","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":227},{"city_id":758,"city_name":"Joydebpur","city_name_bn":"\u099c\u09af\u09bc\u09a6\u09c7\u09ac\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"JYR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 16:46:21","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":758},{"city_id":76,"city_name":"Joypurhat","city_name_bn":"\u099c\u09af\u09bc\u09aa\u09c1\u09b0\u09b9\u09be\u099f","city_status":1,"sequence":76,"city_short_name":"JYP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:11:46","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Joypurhat is a district in the northern part of Bangladesh, under Rajshahi Division. It is called the store-house of food of Bangldesh, is famous for production of all the agricultural products. The economy of Joypurhat is mainly based on seasonal crops & fruits like Rice, Potato, Wheat, Onions, Mango, Jackfruits, Banana etc. A huge amount of sugarcane is also produced here as well; and it holds the country's largest sugar mill. There are also other industries like Rice mill & Poultry farm in this district. It exports about all kinds of agricultural products every day. Since Hili land port is very close to Joypurhat district, many people from this district do export-import business through this port and almost all the vehicles of this port runs through this district. This district is a very important business zone. Some places of interest in Joypurhat are: Bell Amla Bar Shivalaya (Shiva Temple), Pagla Dewan killing ground, Patharghata Church, Lakma Rajbari, Bhimer Punti, Duyani Ghat, Gopinathpur Temple, Hinda-Kasba Shahi Mosque, Nimai Pir's Shrine, Asranga Dighi, Nandail Dighi, Children's Park, Bastabpuri, etc.","parent_id":76},{"city_id":869,"city_name":"Kakonhat","city_name_bn":"\u0995\u09be\u0981\u0995\u09a8\u09b9\u09be\u099f","city_status":1,"sequence":0,"city_short_name":"Kakonhat","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":869},{"city_id":785,"city_name":"Kalukhali","city_name_bn":"\u0995\u09be\u09b2\u09c1\u0996\u09be\u09b2\u09c0","city_status":1,"sequence":0,"city_short_name":"KLHI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":785},{"city_id":798,"city_name":"Kankina","city_name_bn":"\u0995\u09be\u0981\u0995\u09bf\u09a8\u09be","city_status":1,"sequence":0,"city_short_name":"KKC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":798},{"city_id":568,"city_name":"Kashiani","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"Kashiani","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":568},{"city_id":356,"city_name":"Kashinathpur","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":356},{"city_id":387,"city_name":"Kaunia","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":387},{"city_id":37,"city_name":"Khoksha","city_name_bn":null,"city_status":1,"sequence":37,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":37},{"city_id":49,"city_name":"Kholahati","city_name_bn":null,"city_status":1,"sequence":49,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":49},{"city_id":174,"city_name":"Khulna","city_name_bn":"\u0996\u09c1\u09b2\u09a8\u09be","city_status":1,"sequence":0,"city_short_name":"KLN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:12:12","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Khulna is the third largest city, and is located on the south region of Bangladesh. It is a small and tidy town with less a million residents. However due to its second largest port, Mongla Sea Port, it has some significant industries growing there. It hosts some big Cement, Gas and Fisheries industries near Mongla Sea Port. This city is also a gateway to the largest mangrove forest, Sundarbans.","parent_id":174},{"city_id":26,"city_name":"Kishorganj","city_name_bn":"\u0995\u09bf\u09b6\u09cb\u09b0\u0997\u099e\u09cd\u099c","city_status":1,"sequence":26,"city_short_name":"KFJ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-25 15:54:54","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":26},{"city_id":768,"city_name":"Kismat","city_name_bn":"\u0995\u09bf\u09b8\u09ae\u09a4","city_status":1,"sequence":0,"city_short_name":"QST","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":768},{"city_id":81,"city_name":"Kolkata","city_name_bn":null,"city_status":1,"sequence":81,"city_short_name":"BPLC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-08 16:14:01","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Kolkata is the main commercial financial hub of East and North East India and the second largest city in India. The city has many famous places like: Inox Multiplexes, Nandan, Tantra, Barista Coffee Shops, Sourav's Pavilion and Science City. Tourism being one of the main revenue earner, the city has seen vast development in infrastructure. It is also a major shopping hub for sarees and other traditional outfits in places like Sudder Street, Quest mall, New Market and Boro Bazar. Innumerable street food stations and other famous restaurant chains sre scattered throughout the city.","parent_id":81},{"city_id":54,"city_name":"Kotchandpur","city_name_bn":"\u0995\u09cb\u09b0\u09cd\u099f\u099a\u09be\u0981\u09a6\u09aa\u09c1\u09b0","city_status":1,"sequence":54,"city_short_name":"KCP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-09 16:33:46","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":54},{"city_id":290,"city_name":"Kulaura","city_name_bn":"\u0995\u09c1\u09b2\u09be\u0989\u09a1\u09bc\u09be","city_status":1,"sequence":0,"city_short_name":"KRF","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:12:41","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":290},{"city_id":842,"city_name":"Kuliarchar","city_name_bn":"\u0995\u09c1\u09b2\u09bf\u09df\u09be\u09b0\u099a\u09b0","city_status":1,"sequence":0,"city_short_name":"KJB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-11 11:19:42","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":842},{"city_id":39,"city_name":"Kumarkhali","city_name_bn":null,"city_status":1,"sequence":39,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":39},{"city_id":412,"city_name":"Kumira","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"Kumira","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":412},{"city_id":13,"city_name":"Kurigram","city_name_bn":"\u0995\u09c1\u09a1\u09bc\u09bf\u0997\u09cd\u09b0\u09be\u09ae","city_status":1,"sequence":13,"city_short_name":"KRM","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:13:08","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Kurigram district is located in the northern borderline of Bangladesh, under Rangpur Division. There are three municipalities in Kurigram named Ulipur, Nageshwari and Kurigram. Some of the notable tourist attraction sites include: Shahid Freedom Fighter Monument, Rajarhat Sahi masjid, three domed masjid, Joymoni Palace, Chandamari masjid, Kali Siddheshwari mandir and Chilmari Land Port. Kurigram is also famous for their sweets, especially Chomchom.","parent_id":13},{"city_id":787,"city_name":"Kushtia Court","city_name_bn":"\u0995\u09c1\u09b7\u09cd\u099f\u09bf\u09df\u09be\u0995\u09cb\u09b0\u09cd\u099f ","city_status":1,"sequence":0,"city_short_name":"KSTC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":787},{"city_id":296,"city_name":"Laksam","city_name_bn":"\u09b2\u09be\u0995\u09b8\u09be\u09ae","city_status":1,"sequence":0,"city_short_name":"LKM","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:13:36","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":296},{"city_id":40,"city_name":"Lalmonirhat","city_name_bn":"\u09b2\u09be\u09b2\u09ae\u09a8\u09bf\u09b0\u09b9\u09be\u099f","city_status":1,"sequence":40,"city_short_name":"LMH","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:14:00","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":40},{"city_id":870,"city_name":"Lokmanpur","city_name_bn":"\u09b2\u09cb\u0995\u09ae\u09be\u09a8\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"Lokmanpur","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":870},{"city_id":868,"city_name":"Lolitnagar","city_name_bn":"\u09b2\u09b2\u09bf\u09a4\u09a8\u0997\u09b0","city_status":1,"sequence":0,"city_short_name":"Lolitnagar","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":868},{"city_id":778,"city_name":"Madhnagar","city_name_bn":"\u09ae\u09be\u09a7\u09a8\u0997\u09b0","city_status":1,"sequence":0,"city_short_name":"MGA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-27 00:54:08","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":778},{"city_id":544,"city_name":"Madhukhali","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"Madhukhali","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":544},{"city_id":797,"city_name":"Mahimaganj","city_name_bn":"\u09ae\u09b9\u09bf\u09ae\u09be\u0997\u099e\u09cd\u099c ","city_status":1,"sequence":0,"city_short_name":"MMJ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":797},{"city_id":821,"city_name":"Maijdi Court","city_name_bn":"\u09ae\u09be\u0987\u099c\u09a6\u09c0 \u0995\u09cb\u09b0\u09cd\u099f","city_status":1,"sequence":0,"city_short_name":"MZDC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":821},{"city_id":820,"city_name":"Maijgaon","city_name_bn":"\u09ae\u09be\u0987\u099c\u0997\u09be\u0981\u0993 ","city_status":1,"sequence":0,"city_short_name":"MIZ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 11:26:52","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":820},{"city_id":796,"city_name":"Majhgram","city_name_bn":"\u09ae\u09be\u099d\u0997\u09cd\u09b0\u09be\u09ae","city_status":1,"sequence":0,"city_short_name":"MZRA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":796},{"city_id":845,"city_name":"Manikkhali","city_name_bn":"\u09ae\u09be\u09a8\u09bf\u0995\u0996\u09be\u09b2\u09c0","city_status":1,"sequence":0,"city_short_name":"MNN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":845},{"city_id":836,"city_name":"Meher","city_name_bn":"\u09ae\u09c7\u09b9\u09c7\u09b0","city_status":1,"sequence":0,"city_short_name":"MEHP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":836},{"city_id":814,"city_name":"Melandah_Bazar","city_name_bn":"\u09ae\u09c7\u09b2\u09be\u09a8\u09cd\u09a6\u09b9 \u09ac\u09be\u099c\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"MLD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 16:42:24","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":814},{"city_id":849,"city_name":"Methikanda","city_name_bn":"\u09ae\u09c7\u09a5\u09bf\u0995\u09be\u09a8\u09cd\u09a6\u09be","city_status":1,"sequence":0,"city_short_name":"MEY","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":849},{"city_id":786,"city_name":"Mirpur","city_name_bn":"\u09ae\u09bf\u09b0\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"MIP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":786},{"city_id":749,"city_name":"Mirzapur","city_name_bn":"\u09ae\u09bf\u09b0\u09cd\u099c\u09be\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"MZRP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 20:09:02","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":749},{"city_id":838,"city_name":"Modhu_Road","city_name_bn":"\u09ae\u09a7\u09c1\u09b0\u09cb\u09a1 ","city_status":1,"sequence":0,"city_short_name":"MDRD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":838},{"city_id":652,"city_name":"Mohanganj","city_name_bn":"\u09ae\u09cb\u09b9\u09a8\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"MGN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-31 01:57:19","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":652},{"city_id":829,"city_name":"Montola","city_name_bn":"\u09ae\u09a8\u09a4\u09b2\u09be","city_status":1,"sequence":0,"city_short_name":"MNT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":829},{"city_id":788,"city_name":"Mubarakganj","city_name_bn":"\u09ae\u09cb\u09ac\u09be\u09b0\u0995\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"MBRG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 17:20:32","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":788},{"city_id":827,"city_name":"Mukundapur","city_name_bn":"\u09ae\u09c1\u0995\u09c1\u09a8\u09cd\u09a6\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"MCR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":827},{"city_id":581,"city_name":"Muladhuli","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"M","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":581},{"city_id":75,"city_name":"Mymensingh","city_name_bn":"\u09ae\u09af\u09bc\u09ae\u09a8\u09b8\u09bf\u0982\u09b9","city_status":1,"sequence":75,"city_short_name":"MYN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:14:50","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":75},{"city_id":866,"city_name":"Nachole","city_name_bn":"\u09a8\u09be\u099a\u09cb\u09b2","city_status":1,"sequence":0,"city_short_name":"Nachole","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":866},{"city_id":847,"city_name":"Nandina","city_name_bn":"\u09a8\u09be\u09a8\u09cd\u09a6\u09bf\u09a8\u09be","city_status":1,"sequence":0,"city_short_name":"NND","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":847},{"city_id":831,"city_name":"Nangolkot","city_name_bn":"\u09a8\u09be\u0999\u09cd\u0997\u09b2\u0995\u09cb\u099f","city_status":1,"sequence":0,"city_short_name":"NKT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":831},{"city_id":244,"city_name":"Narsingdi","city_name_bn":"\u09a8\u09b0\u09b8\u09bf\u0982\u09a6\u09c0","city_status":1,"sequence":819,"city_short_name":"NRC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:15:20","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":244},{"city_id":874,"city_name":"Narundi","city_name_bn":"\u09a8\u09b0\u09c1\u09a8\u09cd\u09a6\u09bf","city_status":1,"sequence":0,"city_short_name":"NNI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-20 15:54:06","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":874},{"city_id":825,"city_name":"Natherpetua","city_name_bn":"\u09a8\u09be\u09a5\u09c7\u09b0\u09aa\u09c7\u099f\u09c1\u09df\u09be","city_status":1,"sequence":0,"city_short_name":"NXT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":825},{"city_id":226,"city_name":"Natore","city_name_bn":"\u09a8\u09be\u099f\u09cb\u09b0","city_status":1,"sequence":844,"city_short_name":"NTE","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:15:45","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":226},{"city_id":818,"city_name":"Nayapara","city_name_bn":"\u09a8\u09af\u09bc\u09be\u09aa\u09be\u09a1\u09bc\u09be","city_status":1,"sequence":0,"city_short_name":"NOP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 22:34:45","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":818},{"city_id":485,"city_name":"Netrakona","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"N","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":485},{"city_id":872,"city_name":"New Jalpaiguri","city_name_bn":"\u09a8\u09bf\u0989 \u099c\u09b2\u09aa\u09be\u0987\u0997\u09c1\u09dc\u09c0","city_status":1,"sequence":0,"city_short_name":"NJP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-08 16:27:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":872},{"city_id":19,"city_name":"Nilphamari","city_name_bn":null,"city_status":1,"sequence":19,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Nilphamari is a district in northern Bangladesh under Rangpur Division. There are a number of rivers in Nilphamari such as the Tista, Buritista, Isamoti, Jamuneshwari, Dhum, Kumlai, Charalkata, Sorbomongola, Salki, Chikli, Deonai and many more. Some of the famous tourist attraction sites include: Nill-Sagor, Uttara Export Processing Zone, Tista Barrage, Sayadpur Railway Factory, Power Plant, Chini Mosque, Sayadpur Air Port, Shadhinata Monument, Hari Dharma Paul Garh and Shahid Captain Bashar Gate, ","parent_id":19},{"city_id":332,"city_name":"Noakhali","city_name_bn":"\u09a8\u09cb\u09af\u09bc\u09be\u0996\u09be\u09b2\u09c0","city_status":1,"sequence":0,"city_short_name":"NKA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:16:11","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":332},{"city_id":233,"city_name":"Noapara","city_name_bn":"\u09a8\u09cb\u09af\u09bc\u09be\u09aa\u09be\u09a1\u09bc\u09be","city_status":1,"sequence":815,"city_short_name":"NOPP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":233},{"city_id":59,"city_name":"Pabna","city_name_bn":null,"city_status":1,"sequence":59,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":59},{"city_id":784,"city_name":"Pachuria","city_name_bn":"\u09aa\u09be\u099a\u09c1\u09b0\u09bf\u09df\u09be","city_status":1,"sequence":0,"city_short_name":"PCJ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":784},{"city_id":304,"city_name":"Pakshi","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":304},{"city_id":79,"city_name":"Panchbibi","city_name_bn":null,"city_status":1,"sequence":79,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":79},{"city_id":38,"city_name":"Pangsha","city_name_bn":null,"city_status":1,"sequence":38,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":38},{"city_id":35,"city_name":"Parbatipur","city_name_bn":"\u09aa\u09be\u09b0\u09cd\u09ac\u09a4\u09c0\u09aa\u09c1\u09b0","city_status":1,"sequence":35,"city_short_name":"PBT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:18:08","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":35},{"city_id":42,"city_name":"Patgram","city_name_bn":null,"city_status":1,"sequence":42,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":42},{"city_id":773,"city_name":"Pirgacha","city_name_bn":"\u09aa\u09c0\u09b0\u0997\u09be\u099b\u09be","city_status":1,"sequence":0,"city_short_name":"PRC","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":773},{"city_id":90,"city_name":"Pirganj","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":90},{"city_id":812,"city_name":"Piyarpur","city_name_bn":"\u09aa\u09bf\u09af\u09bc\u09be\u09b0\u09aa\u09c1\u09b0 ","city_status":1,"sequence":0,"city_short_name":"PYP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":812},{"city_id":764,"city_name":"Poradaha","city_name_bn":"\u09aa\u09cb\u09a1\u09bc\u09be\u09a6\u09b9","city_status":1,"sequence":0,"city_short_name":"PDB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 17:18:41","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":764},{"city_id":783,"city_name":"Pukuria","city_name_bn":"\u09aa\u09c1\u0995\u09c1\u09b0\u09bf\u09df\u09be","city_status":1,"sequence":0,"city_short_name":"PKXA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":783},{"city_id":826,"city_name":"Quasba","city_name_bn":"\u0995\u09b8\u09ac\u09be","city_status":1,"sequence":0,"city_short_name":"QSB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-05 16:30:24","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":826},{"city_id":794,"city_name":"Raghabpur","city_name_bn":"\u09b0\u09be\u0998\u09ac\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"RUGR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":794},{"city_id":36,"city_name":"Rajbari","city_name_bn":null,"city_status":1,"sequence":36,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":36},{"city_id":112,"city_name":"Rajshahi","city_name_bn":"\u09b0\u09be\u099c\u09b6\u09be\u09b9\u09c0","city_status":1,"sequence":0,"city_short_name":"RJH","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:19:18","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Rajshahi is a major city on the north bank of the Padma River, near the Bangladesh-India border. This city has been historically important since the early 18th century, during the British Colonial rule. Ruled by Maharajas, Kings and Rulers, the city bears witness to notable industrial and agricultural development. Rajshahi silk is infamous countrywide for its fine craftsmanship and quality. Along with the silk industry, it has  jute mills, textile mills, sugar mill and mango based industries. Notable tourist attraction sites include: Varendra Research Museum, Shrine of Shah Makhdum Rupos, Kamruzzaman Central Park and Zoo, Banks of the Padma River, Shaheb Bazar, Ghoramara, Shahid Zia Park, and much more!","parent_id":112},{"city_id":871,"city_name":"Rajshahi_Court","city_name_bn":"\u09b0\u09be\u099c\u09b6\u09be\u09b9\u09c0_\u0995\u09cb\u09b0\u09cd\u099f","city_status":1,"sequence":0,"city_short_name":"Rajshahi_Court","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:53:30","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":871},{"city_id":7,"city_name":"Rangpur","city_name_bn":"\u09b0\u0982\u09aa\u09c1\u09b0","city_status":1,"sequence":7,"city_short_name":"RNP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:19:39","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":1,"about_city":"Being the most important city under the Rangpur Division, it is the commercial hub for the surrounding districts. With the growing importance because of its global positioning, the city has developed a number of banks, insurance companies, hotels, restaurants, shopping malls, and other recreational centers. Some of the notable tourist attraction sites include: Tajhat palace, Town Hall, Jadu Nibash, Binodon Uddyan, and a lot of Jamidar baris.","parent_id":7},{"city_id":865,"city_name":"Rohanpur","city_name_bn":"\u09b0\u09b9\u09a8\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"Rohanpur","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 00:52:18","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":865},{"city_id":583,"city_name":"Ruhia","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"R","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":583},{"city_id":801,"city_name":"Safdarpur","city_name_bn":"\u09b8\u09be\u09ab\u09a6\u09be\u09b0\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"SDX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":801},{"city_id":8,"city_name":"Saidpur","city_name_bn":"\u09b8\u09c8\u09af\u09bc\u09a6\u09aa\u09c1\u09b0","city_status":1,"sequence":8,"city_short_name":"SDP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:20:02","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":8},{"city_id":844,"city_name":"Sararchar","city_name_bn":"\u09b8\u09b0\u09be\u09b0\u099a\u09b0","city_status":1,"sequence":0,"city_short_name":"SCD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 16:49:11","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":844},{"city_id":776,"city_name":"Sardah_Road","city_name_bn":"\u09b8\u09b0\u09a6\u09b9_\u09b0\u09cb\u09a1","city_status":1,"sequence":0,"city_short_name":"SDRD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-28 01:44:39","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":776},{"city_id":840,"city_name":"Sarishabari","city_name_bn":"\u09b8\u09b0\u09bf\u09b7\u09be\u09ac\u09be\u09dc\u09c0","city_status":1,"sequence":0,"city_short_name":"SSI","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 16:46:55","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":840},{"city_id":791,"city_name":"Sathia_Rajapur","city_name_bn":"\u09b8\u09be\u0981\u09a5\u09bf\u09df\u09be_\u09b0\u09be\u099c\u09be\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"Sathia_Rajapur","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":791},{"city_id":118,"city_name":"Setabganj","city_name_bn":null,"city_status":1,"sequence":85,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":118},{"city_id":760,"city_name":"SH M Monsur Ali","city_name_bn":"\u09b6\u09b9\u09c0\u09a6 \u098f\u09ae \u09ae\u09a8\u09b8\u09c1\u09b0 \u0986\u09b2\u09c0","city_status":1,"sequence":0,"city_short_name":"SMA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-05 17:03:03","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":760},{"city_id":830,"city_name":"Shahaji_Bazar","city_name_bn":"\u09b6\u09be\u09b9\u099c\u09c0\u09ac\u09be\u099c\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"SHB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":830},{"city_id":177,"city_name":"Shaistaganj","city_name_bn":"\u09b6\u09be\u09af\u09bc\u09c7\u09b8\u09cd\u09a4\u09be\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"SSJ","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:20:27","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":177},{"city_id":832,"city_name":"Shamshernagar","city_name_bn":"\u09b6\u09ae\u09b8\u09c7\u09b0\u09a8\u0997\u09b0","city_status":1,"sequence":0,"city_short_name":"SJR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-10 15:12:05","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":832},{"city_id":102,"city_name":"Shantahar","city_name_bn":"\u09b8\u09be\u09a8\u09cd\u09a4\u09be\u09b9\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"STU","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 22:20:26","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":102},{"city_id":848,"city_name":"Shashidal","city_name_bn":"\u09b6\u09b6\u09c0\u09a6\u09b2","city_status":1,"sequence":0,"city_short_name":"SHDL","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":848},{"city_id":111,"city_name":"Shibganj","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":null,"is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":111},{"city_id":854,"city_name":"Shyamgonj","city_name_bn":"\u09b6\u09cd\u09af\u09be\u09ae\u0997\u099e\u09cd\u099c","city_status":1,"sequence":0,"city_short_name":"SHYAM","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":854},{"city_id":780,"city_name":"Sirajganjraipur","city_name_bn":"\u09b8\u09bf\u09b0\u09be\u099c\u0997\u099e\u09cd\u099c\u09b0\u09be\u09df\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"SJY","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":780},{"city_id":779,"city_name":"Sirajganj_Bazar","city_name_bn":"\u09b8\u09bf\u09b0\u09be\u099c\u0997\u099e\u09cd\u099c_\u09ac\u09be\u099c\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"SJYB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":779},{"city_id":824,"city_name":"Sonaimuri","city_name_bn":"\u09b8\u09cb\u09a8\u09be\u0987\u09ae\u09c1\u09dc\u09c0","city_status":1,"sequence":0,"city_short_name":"SXM","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":824},{"city_id":771,"city_name":"Sonatola","city_name_bn":"\u09b8\u09cb\u09a8\u09be\u09a4\u09b2\u09be","city_status":1,"sequence":0,"city_short_name":"STX","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":771},{"city_id":180,"city_name":"Sreemangal","city_name_bn":"\u09b6\u09cd\u09b0\u09c0\u09ae\u0999\u09cd\u0997\u09b2","city_status":1,"sequence":137,"city_short_name":"SRG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-24 22:23:05","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Sreemangal is located in the north-eastern part of Bangladesh under Sylhet division. It is also known as the tea capital of Bangladesh with beautiful hilly areas covered with tea estates and pineapple gardens. Sreemangal is famous for its high quality tea, which is also exported worldwide. This place is also vastly famous for its natural beauty full of forests and wildlife; hence it covers as a prime Eco-Tourism Destination. Popular attractions in Sreemangal include: Lawachara National Park (tropical rain forest), Madhabkunda Waterfall (highest waterfall in Bangladesh), Madhabpur lake (the lake of lotus), Tea gardens, Monipuri & Khashia tribal villages, Baikkabeel (wetland of seasonal birds) and the infamous seven-layer tea found at Nilkantha Tea Cabin.","parent_id":180},{"city_id":858,"city_name":"Sreepur","city_name_bn":"\u09b6\u09cd\u09b0\u09c0\u09aa\u09c1\u09b0","city_status":1,"sequence":0,"city_short_name":"SPU","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 15:02:43","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":858},{"city_id":83,"city_name":"Sylhet","city_name_bn":"\u09b8\u09bf\u09b2\u09c7\u099f","city_status":1,"sequence":83,"city_short_name":"SYT","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:21:00","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Sylhet, historically known as Jalalabad, is a major city that lies on the north-east part of Bangladesh. It is a relatively small city, however, with beautiful tourist destinations like, Jaflong, Lalakhal, Madhobpur Lake, HumHum waterfalls, Ratargul forest and other areas; it is one of the leading tourist destinations in the country. Sylhet also has one of the highest literacy rates in Bangladesh. Sylhet is sometimes called the second London as well.","parent_id":83},{"city_id":566,"city_name":"Talma","city_name_bn":null,"city_status":1,"sequence":0,"city_short_name":"Talma","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":566},{"city_id":770,"city_name":"Talora","city_name_bn":"\u09a4\u09be\u09b2\u09cb\u09dc\u09be","city_status":1,"sequence":0,"city_short_name":"TOA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":770},{"city_id":34,"city_name":"Tangail","city_name_bn":"\u099f\u09be\u0999\u09cd\u0997\u09be\u0987\u09b2","city_status":1,"sequence":34,"city_short_name":"TAG","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-22 23:21:23","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":"Tangail district is at the central part of Bangladesh. There are various opinions about the naming of Tangail region. Agro Products are, Paddy, Jute, Sugarcane, Wheat, Pulse, Oil seeds, Vegetable,  Pone-Apple, Mango, Jack fruit, Banana, Litchi etc. Tourist Places in Tangail District are Madhupur National Park, Karatia Landlord Home, Mirzapur Cadet College, Dokhla Rest House, Jamuna Resort, Alenga Resort, Kumudiny Hospital, Vharatoshari Homes, Jamuna Multi Purpose Bridge, Ghatail Sagordighi and Gupta Brindabon, Mawlana Bhashani Graveyard, Atia Jame Mosque, Atia Royal Palace, Dhonbari Royal Palace, Bangbandhu Multipurpose Bridge, Hindu Paul Temple, Sagor Lake, Ishamoti Lake, Police Training Center, Modhupur Temple, Upandra Sarobar, Nagpur Chowdhury Bari etc.","parent_id":34},{"city_id":792,"city_name":"Tantibandha","city_name_bn":"\u09a4\u09be\u0981\u09a4\u09bf\u09ac\u09be\u09a8\u09cd\u09a7\u09be","city_status":1,"sequence":0,"city_short_name":"TNBD","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":792},{"city_id":841,"city_name":"Tarakandi","city_name_bn":"\u09a4\u09be\u09b0\u09be\u0995\u09be\u09a8\u09cd\u09a6\u09bf","city_status":1,"sequence":0,"city_short_name":"TKND(B)","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-01 18:41:11","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":841},{"city_id":795,"city_name":"Tebunia","city_name_bn":"\u099f\u09c7\u09ac\u09c1\u09a8\u09bf\u09af\u09bc\u09be","city_status":1,"sequence":0,"city_short_name":"TBNA","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":795},{"city_id":855,"city_name":"Thakrokona","city_name_bn":"\u09a0\u09be\u0995\u09c1\u09b0\u09be\u0995\u09cb\u09a8\u09be","city_status":1,"sequence":0,"city_short_name":"TKKN","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":855},{"city_id":606,"city_name":"Thakurgaon_Road","city_name_bn":"\u09a0\u09be\u0995\u09c1\u09b0\u0997\u09be\u0981\u0993_\u09b0\u09cb\u09a1","city_status":1,"sequence":0,"city_short_name":"THR","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-04-08 21:46:45","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":606},{"city_id":799,"city_name":"Tushbandar","city_name_bn":"\u09a4\u09c1\u09b7\u09ad\u09be\u09a8\u09cd\u09a1\u09be\u09b0","city_status":1,"sequence":0,"city_short_name":"TSB","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-29 05:52:59","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":799},{"city_id":60,"city_name":"Ullapara","city_name_bn":"\u0989\u09b2\u09cd\u09b2\u09be\u09aa\u09be\u09a1\u09bc\u09be","city_status":1,"sequence":60,"city_short_name":"ULP","is_enroute":1,"is_enable_for_web":1,"created_at":"2022-03-14 13:17:22","updated_at":"0000-00-00 00:00:00","created_by":0,"updated_by":0,"top_city":0,"about_city":null,"parent_id":60}];
+	$( "#dest_from" ).autocomplete({
+        source: cities,
+        minLength: 2,
+		search: function(oEvent, oUI) {
+			// get current input value
+			var sValue = $(oEvent.target).val();
+			// init new search array
+			var aSearch = [];
+			// for each element in the main array ...
+			$(cities).each(function(iIndex, sElement) {
+				// ... if element starts with input value ...
+				if (sElement.city_name.substr(0, sValue.length).toUpperCase() == sValue.toUpperCase() && sElement.is_enable_for_web == 1) {
+					// ... add element
+					if(sElement.city_name.toUpperCase() != $('#dest_to').val().toUpperCase()) {
+						aSearch.push(sElement.city_name);
+					}
+				}
+			});
+			// change search array
+			$(this).autocomplete('option', 'source', aSearch);
+		},
+		select: function(oEvent, oUI) {
+			if(oEvent.keyCode !== 9) {
+				$('#dest_to').focus();
+			}
+		}
+    });
+
+	$( "#dest_to" ).autocomplete({
+        source: cities,
+        minLength: 2,
+		search: function(oEvent, oUI) {
+			// get current input value
+			var sValue = $(oEvent.target).val();
+			// init new search array
+			var aSearch = [];
+			// for each element in the main array ...
+			$(cities).each(function(iIndex, sElement) {
+				// ... if element starts with input value ...
+				if (sElement.city_name.substr(0, sValue.length).toUpperCase() == sValue.toUpperCase() && sElement.is_enable_for_web == 1) {
+					// ... add element
+					if(sElement.city_name.toUpperCase() != $('#dest_from').val().toUpperCase()) {
+						aSearch.push(sElement.city_name);
+					}
+				}
+			});
+			// change search array
+			$(this).autocomplete('option', 'source', aSearch);
+		},
+		select: function(oEvent, oUI) {
+			if(oEvent.keyCode !== 9) {
+				$('#doj').focus();
+			}
+		}
+    });
+
+	$(".jqchars").each(function() {
+		$(this).keypress(function(e) {
+			//var code = $.browser.mozilla ? e.charCode : e.keyCode;
+			var code = e.charCode;
+			if (((code >= 65) && (code <= 90)) || ((code >= 97) && (code <= 122)) || code == 32 || code == 0) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		})
+	});
+});
+
+function validateBusForm(formObj)
+{
+	var $fromCityObj = $(formObj).find('input[name="dest_from"]');
+	var $toCityObj = $(formObj).find('input[name="dest_to"]');
+	var $jDateObj = $(formObj).find('input[name="doj"]');
+	var $rDateObj = $(formObj).find('input[name="dor"]');
+	var $rClassType = $(formObj).find('select[name="choose_class"]');
+	if($fromCityObj.val() == '') {
+		$fromCityObj.focus();
+		alert('Please choose departure station.');
+	} else if($toCityObj.val() == '') {
+		$toCityObj.focus();
+		alert('Please choose destination station.');
+	} else if($jDateObj.val() == '') {
+		$jDateObj.focus();
+		alert('Please select date of your journey.');
+	} else if($rClassType.val() == '') {
+		$rClassType.focus();
+		alert('Please select a Class.');
+	} else {
+		var searchUrl = 'https://eticket.railway.gov.bd/booking/train/search?fromcity=' + $fromCityObj.val() + '&tocity=' + $toCityObj.val() + '&doj=' + $jDateObj.val() + '&class=' + $rClassType.val();
+		if(typeof operatorFilterId != 'undefined') {
+			searchUrl += '&operator=' + operatorFilterId;
+		}
+                //Track Facebook Event - Search
+                var searchStringForFb = $fromCityObj.val() + ' to ' + $toCityObj.val();
+                fbq('track', 'Search', { 
+                    search_string: searchStringForFb,
+                    journey_date: $jDateObj.val(),
+                    return_date: $rDateObj.val()
+                });
+
+
+                //CleverTap - Tracking Start
+                var objAttributes = {
+                    'Origin' : $fromCityObj.val(),
+                    'Destination' : $toCityObj.val(),
+                    'Journey Date' : $jDateObj.val(),
+					'Search Type': 'Journey',
+                    'Event Source' : 'Web'
+                };
+                if($rDateObj.val() != ''){
+                    objAttributes['Return Date'] = $rDateObj.val();
+					objAttributes['Search Type'] = 'Return';
+                }
+
+                clevertap.event.push("[B] Modified Search", objAttributes);
+                //CleverTap - Tracking End
+
+                //Google Tag Manager - Tracking Start
+                var journeyDate = $.datepicker.formatDate('yy-mm-dd', new Date($('#doj').val()));
+                var returnDate = $.datepicker.formatDate('yy-mm-dd', new Date($('#doj').val()));
+                gtag('event', 'page_view',
+                { 
+                    'send_to': 'AW-812588262',
+                    'travel_destid': $toCityObj.val(),
+                    'travel_originid': $fromCityObj.val(),
+                    'travel_pagetype': 'SearchListingPage',
+                    'travel_startdate': journeyDate,
+                    'travel_enddate': returnDate
+                });
+                //Google Tag Manager - Tracking End
+		window.location.href = searchUrl;
+	}
+	return false;
+}
+</script>
+                </div>
+                <!-- search_sec ends here -->
+
+            </div>
+            <!-- col-md-12 row ends -->
+
+        </div>
+        <!-- 1st row ends -->
+
+         
+                                                    </section>
+    <!-- ============= content ends here ================== -->
+    </div>
+    <!-- main_wrapper ends here -->
+
+    
+    <style>
+    .footer {
+        background: #F6F9FF;
+        padding: 0 50px;
+        height: 119px;
+        width: 100%;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    .railway-footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+    .footer .railway-logo{
+      display: flex;
+    }
+    
+    .footer .railway-logo .railway-logo-img{
+      margin-right: 10px;
+    }
+    .footer .railway-logo .railway-logo-img img {
+      width: 55px;
+    }
+    
+    .footer .railway-logo-text .railway-text{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #DA924E;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .footer .railway-logo-text .bangla-text{
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      color: #006747;
+      font-weight: 400;
+      padding-top: 8px;
+    }
+    
+    .footer .powered-by{
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 23px;
+      color: #000000;
+    }
+    .footer .powered-by img{
+      height: 32px;
+    }
+    .footer p{
+      margin: 0;
+      padding: 0;
+    }
+    .powered-company {
+        font-size: 22px;
+        font-weight: bold;
+        color: #006747;
+    }
+
+    @media (max-width: 767px) {
+      .mobile_view{
+          margin: 0px 0px 4px -10px;
+      }
+      .footer {
+        height: auto;
+        padding: 50px;
+      }
+      .railway-footer-wrapper {
+        flex-direction: column;
+      }
+      .footer .railway-logo {
+        margin-bottom: 30px;
+      }
+      .footer .railway-logo-text .bangla-text, 
+      .footer .railway-logo-text .railway-text {
+        text-align: left;
+      }
+    }
+</style>
+<!-- Footer Start Here -->
+<footer class="footer">
+    <div class="railway-footer-wrapper">
+        <div class="railway-logo">
+            <div class="railway-logo-img">
+                <img src="https://eticket.railway.gov.bd/v2/assets/img/home/bangladesh-railway.png" width="60" alt="Bangladesh Railway Logo">
+            </div>
+            <div class="railway-logo-text">
+                <p class="railway-text">Bangladesh Railway</p>
+                <p class="bangla-text">নিরাপদ . আরামদায়ক . সাশ্রয়ী</p>
+            </div>
+        </div>
+        <div class="powered-by">
+            <p>Powered by</p>
+            <div class="powered-company">
+              Shohoz-Synesis-Vincen JV
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End Here -->
+
+    <!-- ===============  JAVASCRIPT STARTS ================ -->
+    <script src="https://eticket.railway.gov.bd/js/bootstrap.js"></script>
+<script src="https://eticket.railway.gov.bd/js/bootstrap-datepicker.js"></script>
+<script src="https://eticket.railway.gov.bd/js/jquery-ui.js"></script>
+<script src="https://eticket.railway.gov.bd/js/modernizr.custom.2.6.2.min.js"></script>
+<script src="https://eticket.railway.gov.bd/js/jquery.meanmenu.min.js"></script>
+
+<script>
+  $('nav.main-navigation').meanmenu({
+        meanScreenWidth: "992",
+        meanMenuContainer: '.mobile-menu'
+    });
+
+  </script>
+<style type="text/css">
+	#couponPopup{
+		z-index: 99999999;
+	}
+	#couponPopup .modal-dialog{
+		z-index:99999; 
+		margin-top: 10%; 
+		width:600px;
+		max-width: 100%;
+	}
+	#couponPopup .modal-content{
+		padding: 12px; 
+		border-radius:10px;
+	}
+	#couponPopup .modal-content button{
+        margin: -25px -25px 0 0;
+	    background: #f73131;
+	    border-radius: 25px;
+	    font-weight: bold;
+	    color: #fff;
+	}
+	#coupon-popup-home{
+		background: url("https://eticket.railway.gov.bd/img/coupon-popup/coupon-popup-home.png") no-repeat center #fff;
+		background-size: 100% auto;
+    	min-height: 333px;
+	}
+	#coupon-popup-search{
+		background: url("https://eticket.railway.gov.bd/img/coupon-popup/coupon-popup-search.png") no-repeat center #fff;
+		background-size: 100% auto;
+    	min-height: 333px;
+	}
+	#coupon-popup-trip{
+		background: url("https://eticket.railway.gov.bd/img/coupon-popup/coupon-popup-trip.png") no-repeat center #fff;
+		background-size: 100% auto;
+    	min-height: 333px;
+    	background-size:cover;
+	}
+	.coupon-popup-content h4{
+		margin: 207px 10px 0 0;
+	}
+	.coupon-popup-content h4 span{
+        padding: 10px 3px;
+	    border-radius: 5px;
+	    color: #222;
+	    font-size: 16px;
+	    font-weight: bold;
+	}
+	.coupon-popup-content h4 span.coupon-code{
+        padding: 3px 15px;
+	    border-radius: 5px;
+	    color: #c70000;
+	    font-weight: bold;
+	    font-size: 16px;
+	    margin-right: 120px;
+	    border: 2px dashed #f73131;
+	    font-family: sans-serif;
+	}
+
+	@media (max-width: 600px) {
+    	#coupon-popup-home, #coupon-popup-search, #coupon-popup-trip {
+	        background-size: 500px auto; /* Force the image to its minimum width */
+	    }
+	    .coupon-popup-content h4{
+			margin: 192px 10px 0 0;
+		}
+	    .coupon-popup-content h4 span.coupon-code{
+		    margin-right: 80px;
+		}
+	}
+	
+	@media (max-width: 500px) {
+    	#coupon-popup-home, #coupon-popup-search, #coupon-popup-trip {
+	        background-size: 420px auto; /* Force the image to its minimum width */
+	    }
+
+	    .coupon-popup-content h4{
+			margin: 180px 10px 0 0;
+		}
+
+		.coupon-popup-content h4 span{
+		    font-size: 12px;
+		}
+		.coupon-popup-content h4 span.coupon-code{
+			padding: 2px 11px;
+		    font-size: 12px;
+		    margin-right: 60px;
+		}
+	}
+	
+</style>
+
+<script>
+	/* Modal call */
+	function modalCall(heading, text, body) 
+	{
+	var html = '<div style="" class="modal fade bs-example-modal-sm" id="modalCall" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">'
+			+ '<div class="modal-dialog modal-sm">'
+			+ '<div class="modal-content" style="padding: 12px"><h3>' + heading + '</h3>'
+			+ '<h4 style="">' + text + '</h4>'
+			+ '<div class="clearfix">&nbsp;</div>'
+			+ '<div class="">' + body + '</div>'
+			+ '<div class="col-xs-12 text-right">'
+			+ '<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>'                    
+			+ '</div>'
+			+ '<br><br>'
+			+ '</div>'
+			+ '</div>'
+			+ '</div>';
+			$('body').prepend(html);
+			$('#modalCall').modal({'backdrop': 'static'});
+			$('#modalCall').addClass('animated bounce');
+			$('#modalCall').on('hidden.bs.modal', function(e) {
+	$('#modalCall').remove();
+	});
+	}
+
+	function couponPopup(flash_coupon_page)
+	{
+		return;
+        $.ajax({
+            type: "POST",
+            url: "/booking/bus/flash-coupon/",
+            data: { flash_coupon_page: flash_coupon_page },
+            complete: function(xhr, textStatus) {
+                //  popAlert(xhr.status);
+            }
+        }).done(function(data) {
+            //console.log(data);
+            //alert(data.flash_coupon)
+            if(data.coupon_code){
+            	$('.modal').modal('hide');
+            	var html = '<div class="modal fade bs-example-modal-sm" id="couponPopup" role="dialog" >'
+							+ '<div class="modal-dialog modal-sm">'
+							+ '<div id="coupon-popup-'+data.flash_coupon_page+'" class="modal-content coupon-popup-content">'
+							//+ '<div class="row text-right">'
+							+ '<button type="button" class="btn btn-sm pull-right" data-dismiss="modal">X</button>'                    
+							//+ '</div>'
+							+ '<h3> </h3>'
+							+ '<h4 class="round hollow pull-right"><span>Coupon: </span><span class="coupon-code">' + data.coupon_code + '</span></h4>'
+							+ '<div class="clearfix">&nbsp;</div>'
+							//+ '<div class="">' + body + '</div>'
+							+ '<br><br>'
+							+ '</div>'
+							+ '</div>'
+							+ '</div>';
+							$('body').prepend(html);
+							$('#couponPopup').modal({'backdrop': 'static'});
+							//$('#couponPopup').modal();
+							$('#couponPopup').addClass('animated bounce');
+							$('#couponPopup').on('hidden.bs.modal', function(e) {
+								$('#couponPopup').remove();
+							});
+            }
+        });
+	}
+</script>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMV5Z7B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1009385744;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1009385744/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1420009814944179&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><!-- Eskimi Code for Remarketing Tag -->
+<div id="_js_esk_aud_tr" style="position:absolute;left:0;top:0;visibility:hidden"></div>
+<script type="text/javascript">
+    var __es_aud_id = 'gIS_SoyCs-vYtBe8D--5lGE0ZjAzMWVlMWE3MjA5OTc', __es_aud_redirect_uri = '';
+</script>
+<script type="text/javascript">
+    (function(uri){
+        var script = document.createElement('script');
+        script.src = uri + "?t=" + +(new Date());
+        document.head.appendChild(script);
+    })('//dsp.eskimi.com/assets/js/retr/tr.min.js');
+</script>
+<noscript>
+    <iframe src="//dsp-aud.eskimi.com/v1/audience_nos/gIS_SoyCs-vYtBe8D--5lGE0ZjAzMWVlMWE3MjA5OTc" width="0" height="0" frameborder="0" style="border: 0"></iframe>
+</noscript>
+<!-- End of Eskimi Code for Remarketing Tag --><script>
+    clevertap.notificationCallback = function(msg){
+        //raise the notification viewed and clicked events in the callback
+        clevertap.raiseNotificationViewed();
+        console.log(JSON.stringify(msg));//your custom rendering implementation here
+        console.log(msg.msgContent.html);
+        var htmldata = msg.msgContent.html;
+        var modal = document.getElementById("mod-body");
+        modal.innerHTML = htmldata;
+        $("#cleverTapModal").modal();
+    };
+
+    clevertap.notifications.push({
+        "titleText":'Would you like to receive Push Notifications?',
+        "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
+        "okButtonText":'Sign me up!',
+        "rejectButtonText":'No thanks',
+        "askAgainTimeInSeconds":600,
+        "serviceWorkerPath": "https://eticket.railway.gov.bd/js/sw.js",
+        "okButtonColor":'#079d49'});
+</script>	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/578b3556c9a9fefa7910bca3/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+</script>
+<!--End of Tawk.to Script-->
+ 
+        <script src="/js/modernizr.custom.2.6.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.seach_header_container').css('display','none','margin-top:20px');
+            $('#button_top_mr').css('margin-top','20px')
+			//Track Facebook Event - Purchase
+			var orderVal = 105.00;
+			fbq('track', 'Purchase', {
+				value: orderVal,
+				currency: 'BDT'
+			});
+			///////////////////////////////////
+			
+//            var $barParent = $('.progress');
+//            var $bar = $('.progress-bar');
+//            var progressValue = ($barParent.width() / 100) * 3;
+//            var progress = setInterval(function () {
+//                if($bar.width() >= $barParent.width()) {
+//                    clearInterval(progress);
+//                    $bar.width($barParent.width());
+//                    $('.progress').removeClass('active');
+//                } else {
+//                    $bar.width($bar.width() + progressValue);
+//                }
+//                var barProgress = ($bar.width() * 100 ) / $barParent.width();
+//                $bar.text(Math.round(barProgress) + "%");
+//            }, 200);
+        });
+    
+    function showTripPolicies(tripId, selectedItem='cancelPolicy')
+    {
+        $.ajax({
+            url: "/booking/trip/" + tripId + "/policy/?selectedItem="+selectedItem,
+            type: 'GET'
+        }).done(function( data ) {
+            $('body').append(data);
+            $('#myModal').css({top:'70px'});
+            $('#myModal').modal({keyboard: true});
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                $(this).remove();
+            });
+        });
+    }
+
+        </script>
+        <!-- G&R Conversion Tracking Code -->
+<script type="text/javascript">
+	GNR_CONV = 2060;
+	(function () {
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = '//content.green-red.com/lib/conv.js';
+		var x = document.getElementsByTagName('script')[0];
+		x.parentNode.insertBefore(s, x);
+	})();
+</script>
+<!-- End of G&R Conversion Tracking Code -->    <!-- Eskimi Conversion Tracking Code -->
+<img src="//dsp.eskimi.com/pixel/cookie" style="display:none" />
+<!-- End of Eskimi Conversion Tracking Code -->
+
+<div id="_js_esk_aud_tr" style="position:absolute;left:0;top:0;visibility:hidden"></div>
+<script type="text/javascript">
+    var __es_aud_id = 'L_Va8eDiW4mu-S6bHyWHT2FhZmMwNmJlMzgzZWU2MjU', __es_aud_redirect_uri = '';
+</script>
+<script type="text/javascript">
+    (function(uri){
+        var script = document.createElement('script');
+        script.src = uri + "?t=" + +(new Date());
+        document.head.appendChild(script);
+    })('//dsp.eskimi.com/assets/js/retr/tr.min.js');
+</script>
+<noscript>
+    <iframe src="//dsp-aud.eskimi.com/v1/audience_nos/L_Va8eDiW4mu-S6bHyWHT2FhZmMwNmJlMzgzZWU2MjU" width="0" height="0" frameborder="0" style="border: 0"></iframe>
+</noscript>
+    <!-- Common script -->
+    <script type="text/javascript">
+
+        // Setting initial height of main_wrapper
+        $("document").ready(function(){
+            function setMainWrapperHeight(){
+                var browserHeight = $(window).height();
+                var headerHeight = $("header.new-header").height();
+                var mainWrapperHeight = $("#main_wrapper").height();
+                var footerHeight = $("footer.footer").height();
+
+                var documentHeight = headerHeight + mainWrapperHeight + footerHeight;
+
+                if(documentHeight < browserHeight){
+                    var mainWrapperHeight = browserHeight - (headerHeight + footerHeight + 25);
+                    $("#main_wrapper").css('min-height', mainWrapperHeight);
+                }
+            }
+
+            // Initial
+            setMainWrapperHeight();
+            $("footer.footer").css('visibility', 'visible');
+
+            // On resize
+            $(window).resize(function(){
+                setMainWrapperHeight();
+            });
+
+            // Logout request
+            $("a[title='Logout']").click(function(e) {
+                e.preventDefault();
+                $('form#logout-form').submit();
+            });
+
+            // Start of CleverTap Integration
+            // Event: [B] Insurance Claimed, Bus Reservation
+            // $(".fire-event").click(function(){
+            //     var text = $(this).text();
+            //     if (text == "Insurance Claim") text = "[B] Insurance Claimed";
+            //     clevertap.event.push(text);
+            // });
+
+            $("a[data-modal-target='terms']").on('click', function(e){
+                e.preventDefault();
+                $("#terms-modal").show();
+            });
+        });
+    </script>
+    <!-- ===============  JAVASCRIPT ENDS ================ -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMV5Z7B"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
