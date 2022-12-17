@@ -34,8 +34,8 @@ CREATE TABLE `deals` (
   `name` text NOT NULL,
   `number` text NOT NULL,
   `address` text NOT NULL,
-  `status` text NOT NULL DEFAULT 'Pending',
-  `payinfo` text NOT NULL DEFAULT 'not yet'
+  `status` text NOT NULL ,
+  `payinfo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -213,8 +213,7 @@ ALTER TABLE `subservices`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`) USING HASH;
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables

@@ -2,8 +2,6 @@ package com.example.easyrent.Controller;
 
 import com.example.easyrent.Model.*;
 import com.example.easyrent.Repository.*;
-import com.example.easyrent.Service.NavigationService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class IndexController {
+public class CourseController {
+
 //=========Dependency Injection Area Start======//
     @Autowired
     UserRepository userRepository;
@@ -32,178 +31,14 @@ public class IndexController {
     DealsRepository dealsRepository;
     @Autowired
     ProfileRepository profileRepository;
-    @Autowired
-    NavigationService navigationService;
 
 //=========Dependency Injection Area End======//
-//=========Home Area Start======//
-    @GetMapping("/home")
-    public String getHome(Model model){
-        Profile profile=new Profile();
-        List <Services> officialservicesList=new ArrayList<Services>();
-        List <Services> sponsoredservicesList=new ArrayList<Services>();
-        officialservicesList=servicesRepository.findByType("Authorized");
-        sponsoredservicesList=servicesRepository.findByType("Unauthorized");
-        model.addAttribute("officialservicesList",officialservicesList);
-        model.addAttribute("sponsoredservicesList",sponsoredservicesList);
-        navigationService.navigationValues(model);
-        model.addAttribute(profile);
-        return "home";
-    }
-    @PostMapping("/postLogout")
-    public String postLogout(Model model){
-        TemporaryHold.email="default";
-        Profile profile=new Profile();
-        List <Services> officialservicesList=new ArrayList<Services>();
-        List <Services> sponsoredservicesList=new ArrayList<Services>();
-        officialservicesList=servicesRepository.findByType("Authorized");
-        sponsoredservicesList=servicesRepository.findByType("Unauthorized");
-        model.addAttribute("officialservicesList",officialservicesList);
-        model.addAttribute("sponsoredservicesList",sponsoredservicesList);
-        methodController.navigationValues(model);
-        model.addAttribute(profile);
-        return "home";
 
-    }
-    @PostMapping("/postNavigation")
-    public String postNavigation(Navigation navigation,Model model){
-        List<SingleService>singleServiceList=new ArrayList<SingleService>();
-        singleServiceList=singleServiceRepository.findBySub(navigation.flag);
-        methodController.navigationValues(model);
-        model.addAttribute("singleServiceList",singleServiceList);
-        return "single_services";
-    }
-    @GetMapping("/contact")
-    public String getContact(Model model){
-        methodController.navigationValues(model);
-        return "contact";
-    }
-    @GetMapping("/faq")
-    public String getFaq(Model model){
-        methodController.navigationValues(model);
-        return "faq";
-    }
-    @PostMapping("/postSearch")
-    public String postSearch(Profile profile,Model model,Navigation navigation){
-        methodController.navigationValues(model);
-        List <Services> officialservicesList=new ArrayList<Services>();
-        List <Services> sponsoredservicesList=new ArrayList<Services>();
-        List<SingleService> searchedcoursesList=new ArrayList<SingleService>();
-        searchedcoursesList=singleServiceRepository.findBySub(navigation.flag);
-        officialservicesList=servicesRepository.findByType("Authorized");
-        sponsoredservicesList=servicesRepository.findByType("Unauthorized");
-        model.addAttribute("officialservicesList",officialservicesList);
-        model.addAttribute("sponsoredservicesList",sponsoredservicesList);
-        model.addAttribute("singleServiceList",searchedcoursesList);
-        return "single_services";
-    }
-
-//=========Home Area End======//
-//=========Registration Area Start======//
-    @GetMapping("/register")
-    public String getRegister(Model model){
-        User user=new User();
-        model.addAttribute("user",user);
-        methodController.navigationValues(model);
-        return "registered";
-    }
-
-    @PostMapping("/postRegister")
-    public String postRegister(User user,Model model){
-        userRepository.save(user);
-        Profile profile=new Profile();
-        profile.name=user.name;
-        profile.primarynumber=user.number;
-        profile.email=user.email;
-        profile.address=user.address;
-        profileRepository.save(profile);
-        Login login=new Login();
-        methodController.navigationValues(model);
-        model.addAttribute(login);
-        return "login";
-    }
-//=========Registration Area End======//
-
-//=========Login Area Start======//
-    @GetMapping("/login")
-    public String getLogin(Model model){
-        Login login=new Login();
-        methodController.navigationValues(model);
-        model.addAttribute(login);
-        return "login";
-    }
-    @PostMapping("/postLogin")
-    public String postLogin(Login login,Model model){
-        TemporaryHold.email=login.email;
-        List <User> userList=new ArrayList<User>();
-        List <Services> officialservicesList=new ArrayList<Services>();
-        List <Services> sponsoredservicesList=new ArrayList<Services>();
-        User user=new User();
-        userList=userRepository.findByEmail(login.email);
-        userList.add(user);
-        if (userList.size()>1){
-            if (userList.get(0).password.equals(login.password)){
-                officialservicesList=servicesRepository.findByType("Authorized");
-                sponsoredservicesList=servicesRepository.findByType("Unauthorized");
-                methodController.navigationValues(model);
-                model.addAttribute("officialservicesList",officialservicesList);
-                model.addAttribute("sponsoredservicesList",sponsoredservicesList);
-                return "services";
-            }
-            else {
-                methodController.navigationValues(model);
-                Login login1=new Login();
-                methodController.navigationValues(model);
-                model.addAttribute("login",login1);
-                return "login";
-            }
-        }
-        else {
-            methodController.navigationValues(model);
-            Login login1=new Login();
-            model.addAttribute("login",login1);
-            return "login";
-        }
-    }
-//=========Login Area End======//
-
-//=========Profile Area Start======//
-    @GetMapping("/profile")
-    public String getProfile(Model model){
-        Profile profile=new Profile();
-        model.addAttribute(profile);
-        return "profile";
-    }
-    @PostMapping("/postProfile")
-    public String postProfile(Profile profile,Model model){
-        if (temporaryHold.email.equals("default")){
-            methodController.navigationValues(model);
-            Login login=new Login();
-            model.addAttribute(login);
-            return "login";
-        }
-        else {
-            methodController.navigationValues(model);
-            return "profile";
-        }
-
-    }
-
-    @PostMapping("/postEdit")
-    public String postEdit(Profile profile,Model model){
-        int updatep=profileRepository.updateByemail(temporaryHold.email,profile.name,profile.primarynumber,profile.secondarynumber,profile.address,profile.city,profile.country,profile.postalcode,profile.about);
-
-        int updateU=userRepository.updateByemail(temporaryHold.email,profile.primarynumber,profile.address);
-        methodController.navigationValues(model);
-        return "profile";
-    }
-
-//=========Profile Area End======//
 
 //=========Services Area Start======//
     @GetMapping("/services")
     public String getServices(Model model){
-        List <Services> officialservicesList=new ArrayList<Services>();
+        List<Services> officialservicesList=new ArrayList<Services>();
         List <Services> sponsoredservicesList=new ArrayList<Services>();
         officialservicesList=servicesRepository.findByType("Authorized");
         sponsoredservicesList=servicesRepository.findByType("Unauthorized");
@@ -213,7 +48,7 @@ public class IndexController {
         return "services";
     }
     @PostMapping("/postServices")
-    public String postServices(Navigation navigation,Model model){
+    public String postServices(Navigation navigation, Model model){
         List<SubService>subServiceList=new ArrayList<SubService>();
 //        System.out.println(navigation.flag+navigation.type);
         subServiceList=subServiceRepository.findByTypeNService(navigation.type,navigation.flag);
@@ -523,6 +358,4 @@ public class IndexController {
         return "paid_courses";
     }
 //=========Services Area End======//
-
-
 }

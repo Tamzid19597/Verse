@@ -15,9 +15,10 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<User,Integer> {
     @Override
     Optional<User> findById(Integer integer);
-    @Query(value = "select * from users where email= :email", nativeQuery = true)
-    public List<User> findByEmail(String email);
+//    @Query(value = "select * from users where email= :email", nativeQuery = true)
+//    public List<User> findByEmail(String email);
 
+    Optional<User> findByEmail(String email);
     @Modifying
     @Transactional
     @Query(value = "UPDATE users SET number=:number, address=:address where email=:email", nativeQuery = true)

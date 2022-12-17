@@ -24,12 +24,6 @@ import java.util.List;
 
     INSERT INTO `single_services` (`id`, `sid`, `type`, `service`, `subservice`, `name`, `description`, `cost`, `topics`, `detail`, `link`, `img`, `imgB`) VALUES (NULL, 'PL0002', 'Authorized', 'Programming Languages', 'Java', 'Spring Boot Tutorial for Beginners (Java Framework)', 'Spring 5: Learn Spring 5 Core, AOP, Spring MVC, Spring Security, Spring REST, Spring Boot 2, Thymeleaf, JPA & Hibernate', '8999tk.', 'Introduction~Why Java Dpring framework is so important?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?~How we are going to operate this course?', 'Here we will discuss about course plan.~Explanation of the importance of Java Development.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.~We will wxplain Course sequence.', 'https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ~https://www.youtube.com/embed/vtPkZShrvXQ', 'images/javaSp.png', 'images/javaSp.png');
 
-
-
-
-
-
-
  */
 
 
