@@ -21,5 +21,5 @@ public interface ProfileRepository extends JpaRepository<Profile,Integer> {
     @Modifying
     @Transactional
     @Query(value = "UPDATE profile SET name=:name, primarynumber=:primarynumber, secondarynumber=:secondarynumber,  address=:address , city=:city, country=:country, postalcode=:postalcode, about=:about where email=:email", nativeQuery = true)
-    public int updateByemail(String email,String name,String primarynumber,String secondarynumber,String address,String city,String country,String postalcode,String about );
+    public void updateByemail(String email,String name,String primarynumber,String secondarynumber,String address,String city,String country,String postalcode,String about );
 }

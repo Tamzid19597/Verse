@@ -17,6 +17,8 @@ public class NavigationService {
     ProfileRepository profileRepository;
     @Autowired
     TemporaryHold temporaryHold;
+    @Autowired
+    HttpSessionService httpSessionService;
 
     public void navigationValues(Model model){
         model.addAttribute("navigation",new Navigation());
