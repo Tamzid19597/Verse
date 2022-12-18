@@ -23,20 +23,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/modified.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/modified.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="/js/move-top.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </ul>
         </div>
         <div class="w3ls_logo_products_left">
-            <img src="images/VLogo.png" alt=" " class="My-img-responsive">
+            <img src="/images/VLogo.png" alt=" " class="My-img-responsive">
         </div>
 
 
@@ -336,7 +336,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="agileinfo_single">
 
             <div class="col-md-4 agileinfo_single_left">
-                <img id="example" th:src="${deal.getImgB()}" alt=" " class="img-responsive">
+                <img id="example" th:src="@{'/'+${deal.getImgB()}}" alt=" " class="img-responsive">
             </div>
             <div class="col-md-8 agileinfo_single_right">
                 <h2 th:text="${deal.getName()}"></h2>
@@ -357,7 +357,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--                            <input type="hidden" th:value="${deal.getSid()}" th:attr="name='flag'"/>-->
 <!--                            <input type="submit" value="Unenroll" class="button"/>-->
 <!--                        </form>-->
-                        <form method="post" th:action="@{/postEnrollCourse}" th:object="${navigation}">
+                        <form method="post" th:action="@{/profile/enrolled-courses/{courseId}(courseId=${deal.getSid()})}" th:object="${navigation}">
                             <input type="hidden" th:value="${deal.getType()}" th:attr="name='type'"/>
                             <input type="hidden" th:value="${deal.getSid()}" th:attr="name='flag'"/>
                             <input type="submit" value="View Course" class="button"/>
@@ -444,14 +444,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </ul>
         </div>
         <div class="payment-w3ls">
-            <img src="images/card.png" alt=" " class="img-responsive">
+            <img src="/images/card.png" alt=" " class="img-responsive">
         </div>
         <div class="clearfix"> </div>
     </div>
 </div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 <!-- top-header and slider -->
 <!-- here stars scrolling icon -->
@@ -473,7 +473,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
 </script>
 <!-- //here ends scrolling icon -->
-<script src="js/minicart.min.js"></script>
+<script src="/js/minicart.min.js"></script>
 <script>
     // Mini Cart
     paypal.minicart.render({
@@ -485,8 +485,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     }
 </script>
 <!-- main slider-banner -->
-<script src="js/skdslider.min.js"></script>
-<link href="css/skdslider.css" rel="stylesheet">
+<script src="/js/skdslider.min.js"></script>
+<link href="/css/skdslider.css" rel="stylesheet">
 <script type="text/javascript">
     jQuery(document).ready(function() {
         jQuery('#demo1').skdslider({

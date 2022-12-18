@@ -24,4 +24,7 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     @Query(value = "UPDATE users SET number=:number, address=:address where email=:email", nativeQuery = true)
     public int updateByemail(String email,String number,String address);
 
+    @Query(
+            "SELECT CASE WHEN COUNT(u) > 0 THEN TRUE ELSE FALSE END FROM User u WHERE u.email = ?1")
+    Boolean  isPersonExitsByEmail(String email);
 }

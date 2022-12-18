@@ -36,7 +36,7 @@ public class DealService {
         List<Dummy>dummyList=new ArrayList<Dummy>();
         for (int i=0;i<dealsList.size();i++){
             Dummy dummy=new Dummy();
-            SingleService singleServices=singleServiceRepository.findById(Integer.getInteger(dealsList.get(i).sid)).get();
+            SingleService singleServices=singleServiceRepository.findById(Integer.parseInt(dealsList.get(i).getSid())).get();
             dummy.name=singleServices.name;
             dummy.description=singleServices.description;
             dummy.cost=singleServices.cost;
@@ -48,6 +48,20 @@ public class DealService {
             dummyList.add(dummy);
         }
         return dummyList;
+    }
+    public Dummy getDeal(String email,String sid){
+        Deals deals=dealsRepository.findByEmailNsid(email, sid).get(0);
+        Dummy dummy=new Dummy();
+        SingleService singleServices=singleServiceRepository.findById(Integer.parseInt(deals.getSid())).get();
+        dummy.name=singleServices.name;
+        dummy.description=singleServices.description;
+        dummy.cost=singleServices.cost;
+        dummy.imgB=singleServices.imgB;
+        dummy.sid=deals.sid;
+        dummy.status=deals.status;
+        dummy.type=singleServices.type;
+        dummy.address=deals.address;
+        return dummy;
     }
     public void deleteDeal(String email,String sid){
         dealsRepository.deleteByEmailNsid(email,sid);

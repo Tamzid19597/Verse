@@ -471,30 +471,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <!--- Courses--->
-
-        <!--            <div class="col-md-8 products-right">-->
-        <!--                <div class="products-right-grid">-->
-        <!--                    <div class="products-right-grids">-->
-        <!--                        <div class="sorting">-->
-        <!--                            <select id="country" onchange="change_country(this.value)" class="frm-field required sect">-->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Default sorting</option>-->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Sort by popularity</option> -->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Sort by average rating</option>					-->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Sort by price</option>								-->
-        <!--							</select>-->
-        <!--                        </div>-->
-        <!--                        <div class="sorting-left">-->
-        <!--                            <select id="country1" onchange="change_country(this.value)" class="frm-field required sect">-->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Item on page 9</option>-->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Item on page 18</option> -->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>Item on page 32</option>					-->
-        <!--								<option value="null"><i class="fa fa-arrow-right" aria-hidden="true"></i>All</option>								-->
-        <!--							</select>-->
-        <!--                        </div>-->
-        <!--                        <div class="clearfix"> </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-
         <div class="agile_top_brands_grids">
             <th:block th:each="subservice:${singleServiceList}">
                 <div class="col-md-4 top_brand_left">
@@ -509,34 +485,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <div class="snipcart-thumb">
                                             <a href="#"><img title=" " alt=" " th:src="@{'/'+${subservice.getImg()}}"/></a><br>
                                             <h4 th:utext="${subservice.getName()}" ></h4>
-                                            <!--
-                                            <div class="stars">
-                                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star blue-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star gray-star" aria-hidden="true"></i>
-                                            </div>
-                                            -->
-
                                             <p th:utext="'Type: '+${subservice.getType()}" ></p>
                                         </div>
                                         <div class="snipcart-details top_brand_home_details">
-                                            <!--                                                    <form action="#" method="post">-->
-                                            <!--                                                        <fieldset>-->
-                                            <!--                                                            <input type="hidden" name="cmd" value="_cart" />-->
-                                            <!--                                                            <input type="hidden" name="add" value="1" />-->
-                                            <!--                                                            <input type="hidden" name="business" value=" " />-->
-                                            <!--                                                            <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />-->
-                                            <!--                                                            <input type="hidden" name="amount" value="7.99" />-->
-                                            <!--                                                            <input type="hidden" name="discount_amount" value="1.00" />-->
-                                            <!--                                                            <input type="hidden" name="currency_code" value="USD" />-->
-                                            <!--                                                            <input type="hidden" name="return" value=" " />-->
-                                            <!--                                                            <input type="hidden" name="cancel_return" value=" " />-->
-                                            <!--                                                            <input type="submit" name="submit" value="Add to cart" class="button" />-->
-                                            <!--                                                        </fieldset>-->
-                                            <!--                                                    </form>-->
-                                            <form method="post" th:action="@{/postSingleservice}" th:object="${navigation}">
+                                            <form method="post" th:action="@{/courses/{categoryType}/{categoryName}/{subcategoryName}/{courseId}(categoryType=${subservice.getType()},categoryName=${subservice.getService()},subcategoryName=${subservice.getSubservice()},courseId=${subservice.getId()})}" th:object="${navigation}">
                                                 <input type="hidden" th:value="${subservice.getType()}" th:attr="name='type'"/>
                                                 <input type="hidden" th:value="${subservice.getSid()}" th:attr="name='flag'"/>
                                                 <input type="submit" value="View Course" class="button"/>
@@ -549,25 +501,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
             </th:block>
-            <!--                <nav class="numbering">-->
-            <!--                    <ul class="pagination paging">-->
-            <!--                        <li>-->
-            <!--                            <a href="#" aria-label="Previous">-->
-            <!--                                <span aria-hidden="true">&laquo;</span>-->
-            <!--                            </a>-->
-            <!--                        </li>-->
-            <!--                        <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>-->
-            <!--                        <li><a href="#">2</a></li>-->
-            <!--                        <li><a href="#">3</a></li>-->
-            <!--                        <li><a href="#">4</a></li>-->
-            <!--                        <li><a href="#">5</a></li>-->
-            <!--                        <li>-->
-            <!--                            <a href="#" aria-label="Next">-->
-            <!--                                <span aria-hidden="true">&raquo;</span>-->
-            <!--                            </a>-->
-            <!--                        </li>-->
-            <!--                    </ul>-->
-            <!--                </nav>-->
         </div>
         <div class="clearfix"> </div>
     </div>

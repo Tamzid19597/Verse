@@ -23,21 +23,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/modified.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/Mystyle.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/modified.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/Mystyle.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="/js/move-top.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </ul>
         </div>
         <div class="w3ls_logo_products_left">
-            <img src="images/VLogo.png" alt=" " class="My-img-responsive">
+            <img src="/images/VLogo.png" alt=" " class="My-img-responsive">
         </div>
 
 
@@ -308,7 +308,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </ul>
                     </li>
-                    <!--                        <li><a href="http://localhost:8080/contact">Contact</a></li>-->
                 </ul>
             </div>
         </nav>
@@ -336,7 +335,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-lg-7 col-md-10">
                         <h1 class="display-2 text-white" th:text="'Hello, '+${profile.getName()}"></h1>
                         <p class="text-white mt-0 mb-5">This is your profile page. You can see the  courses you've enrolled  and manage your profiles or courses instantly</p>
-                        <form method="post" th:action="@{/postYourdeals}" th:object="${navigation}">
+                        <form method="post" th:action="@{/enrolled-courses}" th:object="${navigation}">
                             <input type="submit" value="Enrolled Courses" class="button btn btn-info"/>
                         </form>
                     </div>
@@ -352,7 +351,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="col-lg-3 order-lg-2">
                                 <div class="card-profile-image">
                                     <a href="#">
-                                        <img src="images/VLogo.png" class="rounded-circle">
+                                        <img src="/images/VLogo.png" class="rounded-circle">
                                     </a>
                                 </div>
                             </div>
@@ -364,24 +363,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </div>
                         <div class="card-body pt-0 pt-md-4">
-<!--                            <div class="row">-->
-<!--                                <div class="col">-->
-<!--                                    <div class="card-profile-stats d-flex justify-content-center mt-md-5">-->
-<!--                                        <div>-->
-<!--                                            <span class="heading">22</span>-->
-<!--                                            <span class="description">Friends</span>-->
-<!--                                        </div>-->
-<!--                                        <div>-->
-<!--                                            <span class="heading">10</span>-->
-<!--                                            <span class="description">Photos</span>-->
-<!--                                        </div>-->
-<!--                                        <div>-->
-<!--                                            <span class="heading">89</span>-->
-<!--                                            <span class="description">Comments</span>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
                             <div class="text-center">
                                 <h3>
                                     Verse<span class="font-weight-light">,Rd-27ABc</span>
@@ -405,7 +386,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
                 <div class="col-xl-8 order-xl-1">
-                    <form  method="post"  action="action_page.php" th:action="@{/postEdit}" th:object="${profile}">
+                    <form  method="post"  action="action_page.php" th:action="@{/my-profile/edit}" th:object="${profile}">
                     <div class="card bg-secondary shadow">
                         <div class="card-header bg-white border-0">
                             <div class="row align-items-center">
@@ -497,7 +478,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </div>
                 </form>
-                    <form  method="post"  action="action_page.php" th:action="@{/postLogout}" th:object="${profile}">
+                    <form  method="get"  action="action_page.php" th:action="@{/logout}" th:object="${profile}">
                         <input type="submit" value="Log Out" class="button btn btn-info"/>
                     </form>
                 </div>

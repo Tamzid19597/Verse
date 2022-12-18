@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -29,5 +30,17 @@ public class UserService {
     }
     public void updateUser(Profile profile, HttpSession httpSession){
         userRepository.updateByemail(httpSessionService.getUserEmail(httpSession),profile.primarynumber,profile.address);
+    }
+    public String getUserRole(User user){
+        return userRepository.findByEmail(user.email).get().role;
+    }
+
+    public UserService(UserRepository userRepository)
+    {
+        // this keyword refers to current instance
+        this.userRepository = userRepository;
+    }
+    public List<User> getAllUser(){
+        return userRepository.findAll();
     }
 }

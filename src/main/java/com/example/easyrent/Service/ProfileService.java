@@ -36,4 +36,7 @@ public class ProfileService {
     public Profile getProfile(String email){
         return profileRepository.findByEmail(email).get(0);
     }
+    public Profile getProfileById(int id){
+        return profileRepository.findById(id).get();
+    }
 }

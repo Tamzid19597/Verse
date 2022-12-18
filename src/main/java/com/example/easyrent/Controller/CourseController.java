@@ -85,13 +85,11 @@ public String postNavigation(Model model,@PathVariable String subCategories){
         model.addAttribute("similarserviceList",courseService.getSimilarCourses(Integer.parseInt(courseId)));
         return "service_confirm";
     }
-    @GetMapping("/deals")
-    public String getDeal(Model model,HttpSession httpSession){
-        String cancel="cancel";
-        String change="change";
-        model.addAttribute("cancel",cancel);
-        model.addAttribute("change",change);
-        model.addAttribute("dealsList",dealService.getAllDeals(httpSessionService.getUserEmail(httpSession)));
+    @GetMapping("/enrolled-courses/{id}")
+    public String getDeal(Model model,@PathVariable String id){
+        model.addAttribute("cancel","cancel");
+        model.addAttribute("change","change");
+        model.addAttribute("dealsList",dealService.getAllDeals(userRepository.findById(Integer.parseInt(id)).get().getEmail()));
         navigationService.navigationValues(model);
         model.addAttribute("user",new User());
         return "deals";
@@ -100,7 +98,7 @@ public String postNavigation(Model model,@PathVariable String subCategories){
     public RedirectView postServiceconfirm(Navigation navigation, Model model, HttpSession httpSession, @PathVariable String courseId){
         if (httpSessionService.isValid(httpSession)){
             dealService.addDeals(Integer.parseInt(courseId),httpSessionService.getUserEmail(httpSession));
-            return new RedirectView("/enrolled-courses");
+            return new RedirectView("/enrolled-courses/"+userRepository.findByEmail(httpSessionService.getUserEmail(httpSession)).get().getId());
         }
         else {
             return new RedirectView("/login");
@@ -117,7 +115,7 @@ public String postNavigation(Model model,@PathVariable String subCategories){
     }
 
     @PostMapping("/enrolled-courses/cancel/{courseId}")
-    public String postCanceldeal(Model model,HttpSession httpSession,@PathVariable String courseId){
+    public String postCancelDeal(Model model,HttpSession httpSession,@PathVariable String courseId){
         dealService.deleteDeal(httpSessionService.getUserEmail(httpSession),courseId);
         model.addAttribute("cancel","cancel");
         model.addAttribute("change","change");
@@ -127,37 +125,53 @@ public String postNavigation(Model model,@PathVariable String subCategories){
         return "deals";
     }
 
-    @PostMapping("/enrolled-courses/{courseId}")
+    @PostMapping("/profile/enrolled-courses/{courseId}")
     public String postEnrollCourse(Model model,HttpSession httpSession,@PathVariable String courseId){
+        if (!httpSessionService.isValid(httpSession)){
+            navigationService.navigationValues(model);
+            model.addAttribute("user",new User());
+            return "login";
+        }
         List<Topic>topicList=courseService.getAllTopic(Integer.parseInt(courseId));
         if (!dealService.isPaid(httpSessionService.getUserEmail(httpSession),courseId)){
-            methodController.navigationValues(model);
+            navigationService.navigationValues(model);
             model.addAttribute("topicList",courseService.restrictTopic(topicList));
-            model.addAttribute("singleservice",singleServiceRepository.findById(Integer.parseInt(courseId)));
+            model.addAttribute("singleservice",dealService.getDeal(httpSessionService.getUserEmail(httpSession),courseId));
             model.addAttribute("user",new User());
             return "enrolled_courses";
         }
         else {
             model.addAttribute("topicList",topicList);
-            model.addAttribute("singleservice",singleServiceRepository.findById(Integer.parseInt(courseId)));
+            model.addAttribute("singleservice",dealService.getDeal(httpSessionService.getUserEmail(httpSession),courseId));
             model.addAttribute("user",new User());
+            navigationService.navigationValues(model);
             return "paid_courses";
         }
 
     }
-    @PostMapping("/payment")
-    public String Payment(Model model,Navigation navigation){
-        Payment payment=new Payment();
-        methodController.navigationValues(model);
-        model.addAttribute("sid",navigation.flag);
-        model.addAttribute(payment);
-        return "payment";
-    }
+    @GetMapping("/profile/enrolled-courses/{courseId}")
+    public String getEnrollCourse(Model model,HttpSession httpSession,@PathVariable String courseId){
+        if (!httpSessionService.isValid(httpSession)){
+            navigationService.navigationValues(model);
+            model.addAttribute("user",new User());
+            return "login";
+        }
+        List<Topic>topicList=courseService.getAllTopic(Integer.parseInt(courseId));
+        if (!dealService.isPaid(httpSessionService.getUserEmail(httpSession),courseId)){
+            navigationService.navigationValues(model);
+            model.addAttribute("topicList",courseService.restrictTopic(topicList));
+            model.addAttribute("singleservice",dealService.getDeal(httpSessionService.getUserEmail(httpSession),courseId));
+            model.addAttribute("user",new User());
+            return "enrolled_courses";
+        }
+        else {
+            model.addAttribute("topicList",topicList);
+            model.addAttribute("singleservice",dealService.getDeal(httpSessionService.getUserEmail(httpSession),courseId));
+            model.addAttribute("user",new User());
+            navigationService.navigationValues(model);
+            return "paid_courses";
+        }
 
-    @PostMapping("/payment/confirm/{courseId}")
-    public RedirectView postPayment(Model model,Payment payment,HttpSession httpSession,@PathVariable String courseId){
-        dealService.updatePayment(httpSessionService.getUserEmail(httpSession),courseId,payment);
-        return new RedirectView("/enrolled-courses/"+courseId);
     }
 //=========Services Area End======//
 }

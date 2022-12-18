@@ -7,7 +7,7 @@ Github URL: https://github.com/Tamzid19597
 
 <head>
     <title>Verse|Home</title>
-    <link rel="icon" href="images/VLogo.png">
+    <link rel="icon" href="/images/VLogo.png">
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,20 +23,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/modified.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/modified.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="/js/move-top.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -55,18 +55,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="agileits_header">
         <div class="container">
             <div class="w3l_offers">
-                <p>Ver<a href="http://localhost:8080/home">se</a></p>
+                <p>Ver<a th:href="@{/home}">se</a></p>
             </div>
             <div class="agile-login">
                 <ul>
-                    <li><a href="http://localhost:8080/register"> Create Account </a></li>
-                    <li><a href="http://localhost:8080/login">Login</a></li>
-                    <li><a href="http://localhost:8080/contact">Help</a></li>
+                    <li><a th:href="@{/register}"> Create Account </a></li>
+                    <li><a th:href="@{/login}">Login</a></li>
+                    <li><a th:href="@{/contact}">Help</a></li>
 
                 </ul>
             </div>
             <div class="product_list_header">
-                <form action="#" method="post" class="last" th:action="@{/postProfile}" th:object="${profile}">
+                <form action="#" method="post" class="last" th:action="@{/my-profile}" th:object="${profile}">
                     <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-user" aria-hidden="true"></i></button>
                 </form>
             </div>
@@ -83,12 +83,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </ul>
             </div>
             <div class="w3ls_logo_products_left">
-                <img src="images/VLogo.png" alt=" " class="My-img-responsive">
+                <img src="/images/VLogo.png" alt=" " class="My-img-responsive">
             </div>
 
 
             <div class="w3l_search">
-                <form method="post" th:action="@{/postSearch}" th:object="${navigation}">
+                <form method="post" th:action="@{/search}" th:object="${navigation}">
 <!--                    <input type="search" name="Search" placeholder="Search for a Product...">-->
 
                     <input type="search"  name="Search" th:field="*{flag}" placeholder="Search for a Course..."/>
@@ -352,7 +352,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="row">
                         <div class="col-md-12 mt-3">
                             <div class="grids5-info">
-                                <a href="#url" class="d-block zoom"><img src="assets/images/p1.jpg" alt="" class="img-fluid news-image" /></a>
+                                <a href="#url" class="d-block zoom"><img src="/assets/images/p1.jpg" alt="" class="img-fluid news-image" /></a>
                                 <div class="blog-info">
                                     <p class="date">Step 01</p>
                                     <h4>Join Community</h4>
@@ -366,7 +366,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="row">
                         <div class="col-md-12 mt-3">
                             <div class="grids5-info">
-                                <a href="#url" class="d-block zoom"><img src="assets/images/p2.jpg" alt="" class="img-fluid news-image" /></a>
+                                <a href="#url" class="d-block zoom"><img src="/assets/images/p2.jpg" alt="" class="img-fluid news-image" /></a>
                                 <div class="blog-info">
                                     <p class="date">Step 02</p>
                                     <h4>Learning</h4>
@@ -380,7 +380,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="row">
                         <div class="col-md-12 mt-3">
                             <div class="grids5-info">
-                                <a href="#url" class="d-block zoom"><img src="assets/images/p3.jpg" alt="" class="img-fluid news-image" /></a>
+                                <a href="#url" class="d-block zoom"><img src="/assets/images/p3.jpg" alt="" class="img-fluid news-image" /></a>
                                 <div class="blog-info">
                                     <p class="date">Step 03</p>
                                     <h4>Get the Best Job</h4>
@@ -395,7 +395,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="row">
                         <div class="col-md-12 mt-3">
                             <div class="grids5-info">
-                                <a href="#url" class="d-block zoom"><img src="assets/images/p4.jpg" alt="" class="img-fluid news-image" /></a>
+                                <a href="#url" class="d-block zoom"><img src="/assets/images/p4.jpg" alt="" class="img-fluid news-image" /></a>
                                 <div class="blog-info">
                                     <p class="date">Step 04</p>
                                     <h4>Community</h4>
@@ -456,7 +456,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                 <h4 th:utext="${officialservice.getType()}" ></h4>
                                                             </div>
                                                             <div class="snipcart-details top_brand_home_details">
-                                                                <form method="post" th:action="@{/postServices}" th:object="${navigation}">
+                                                                <form method="post" th:action="@{/courses/{categoryType}/{categoryName}(categoryType=${officialservice.getType()},categoryName=${officialservice.getName()})}"  th:object="${navigation}">
                                                                     <input type="hidden" th:value="${officialservice.getName()}" th:attr="name='flag'"/>
                                                                     <input type="hidden" th:value="${officialservice.getType()}" th:attr="name='type'"/>
                                                                     <input type="submit" value="See Courses" class="button"/>
@@ -496,7 +496,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                 <p th:utext="'Type: '+${sponsoredservice.getType()}" ></p>
                                                             </div>
                                                             <div class="snipcart-details top_brand_home_details">
-                                                                <form method="post" th:action="@{/postServices}" th:object="${navigation}">
+                                                                <form method="post" th:action="@{/courses/{categoryType}/{categoryName}(categoryType=${sponsoredservice.getType()},categoryName=${sponsoredservice.getName()})}"th:object="${navigation}">
                                                                     <input type="hidden" th:value="${sponsoredservice.getName()}" th:attr="name='flag'"/>
                                                                     <input type="hidden" th:value="${sponsoredservice.getType()}" th:attr="name='type'"/>
                                                                     <input type="submit" value="See Courses" class="button"/>

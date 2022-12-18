@@ -307,7 +307,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </ul>
                     </li>
-                    <!--                        <li><a href="http://localhost:8080/contact">Contact</a></li>-->
                 </ul>
             </div>
         </nav>
@@ -325,7 +324,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //breadcrumbs -->
 <!-- login -->
-<form  method="post"  action="action_page.php" th:action="@{/postPayment}" th:object="${payment}">
+<form  method="post"  action="action_page.php" th:action="@{/payment/confirm/{courseId}(courseId=${sid})}" th:object="${payment}">
     <div class="login">
         <div class="container">
             <h2>Make Payment</h2>

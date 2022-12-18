@@ -74,4 +74,10 @@ public class CourseService {
         }
         return topicList;
     }
+    public List<SingleService> getAllCourse(){
+        return singleServiceRepository.findAll();
+    }
+    public CourseService(SingleServiceRepository singleServiceRepository){
+        this.singleServiceRepository=singleServiceRepository;
+    }
 }
