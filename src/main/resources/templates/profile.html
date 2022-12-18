@@ -56,18 +56,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="agileits_header">
     <div class="container">
         <div class="w3l_offers">
-            <p>Ver<a href="http://localhost:8080/home">se</a></p>
+            <p>Ver<a th:href="@{/home}">se</a></p>
         </div>
         <div class="agile-login">
             <ul>
-                <li><a href="http://localhost:8080/register"> Create Account </a></li>
-                <li><a href="http://localhost:8080/login">Login</a></li>
-                <li><a href="http://localhost:8080/contact">Help</a></li>
+                <li><a th:href="@{/register}"> Create Account </a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+                <li><a th:href="@{/contact}">Help</a></li>
 
             </ul>
         </div>
         <div class="product_list_header">
-            <form action="#" method="post" class="last" th:action="@{/postProfile}" th:object="${profile}">
+            <form action="#" method="post" class="last" th:action="@{/my-profile}" th:object="${profile}">
                 <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-user" aria-hidden="true"></i></button>
             </form>
         </div>
@@ -89,7 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
         <div class="w3l_search">
-            <form method="post" th:action="@{/postSearch}" th:object="${navigation}">
+            <form method="post" th:action="@{/search}" th:object="${navigation}">
                 <!--                    <input type="search" name="Search" placeholder="Search for a Product...">-->
 
                 <input type="search"  name="Search" th:field="*{flag}" placeholder="Search for a Course..."/>
