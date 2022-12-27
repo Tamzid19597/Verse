@@ -337,6 +337,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="#">Forgot Password?</a>
 					</div>
 					<input type="submit" value="Login">
+				<a th:href="@{/oauth2/authorization/google}">Login with Google</a>
 			</div>
 			<h4>For New People</h4>
 			<p><a href="http://localhost:8080/register">Register Here</a> (Or) go back to <a th:href="@{/home}">Home<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
@@ -421,7 +422,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 <!-- top-header and slider -->
 <!-- here stars scrolling icon -->
@@ -443,7 +444,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- //here ends scrolling icon -->
-<script src="js/minicart.min.js"></script>
+<script src="/js/minicart.min.js"></script>
 <script>
 	// Mini Cart
 	paypal.minicart.render({
@@ -455,8 +456,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	}
 </script>
 <!-- main slider-banner -->
-<script src="js/skdslider.min.js"></script>
-<link href="css/skdslider.css" rel="stylesheet">
+<script src="/js/skdslider.min.js"></script>
+<link href="/css/skdslider.css" rel="stylesheet">
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		jQuery('#demo1').skdslider({

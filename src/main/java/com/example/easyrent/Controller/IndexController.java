@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.view.RedirectView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +19,7 @@ public class IndexController {
     NavigationService navigationService;
     @Autowired
     ServicesRepository servicesRepository;
+
     @GetMapping("/home")
     public String getHome(Model model){
         Profile profile=new Profile();
@@ -29,5 +32,9 @@ public class IndexController {
         navigationService.navigationValues(model);
         model.addAttribute(profile);
         return "home";
+    }
+    @GetMapping("/")
+    public RedirectView getIndex(Model model){
+        return new RedirectView("/home");
     }
 }
